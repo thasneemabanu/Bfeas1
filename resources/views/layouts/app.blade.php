@@ -20,9 +20,6 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-  <!-- Content here -->
-</div>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -36,16 +33,6 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="emppanal">About <span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">123 <span class="sr-only"></span></a>
-                    </li>
 
                     </ul>
 
@@ -91,7 +78,6 @@
         <main class="py-4">
             @yield('content')
         </main>
-        
     </div>
 </body>
 </html>
