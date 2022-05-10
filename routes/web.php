@@ -24,3 +24,19 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get('/adminpanal', function () {
+    return view('home');
+});
+
+
+
+
+
+
