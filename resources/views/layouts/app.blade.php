@@ -20,62 +20,19 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-  <!-- Content here -->
-</div>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <!--<a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
-                </a>-->
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!--nav bar w3-->
-                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
-                <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="C:\Users\sazmi\Downloads\download.jpg" alt="Logo" style="width:40px;" class="rounded-pill">
-    </a>
-    <div class="text-center">
-            <font color="white" <i class="fa fa-align-justify" aria-hidden="true"></i><h3>Welcome to manage employee Attendance Details</h3></font>
-            
-</div>
-  </div>
-</nav>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
-                    <li class="nav-item active">
-                      <a class="nav-link" href="home">Home <span class="sr-only"></span></a> 
-                    </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <li class="nav-item active">
-                      <a class="nav-link" href="login">Admin Panal <span class="sr-only"></span></a>
-                    </li>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <li class="nav-item active">
-                      <a class="nav-link" href="login">Employee Panal <span class="sr-only"></span></a>
-                    </li>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <li class="nav-item active">
-                      <a class="nav-link" href="login">Supervisor Panal <span class="sr-only"></span></a>
-                    </li>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <li class="nav-item active">
-                      <a class="nav-link" href="login">Director Panal <span class="sr-only"></span></a>
-                    </li>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <li class="nav-item active">
-                      <a class="nav-link" href="">Leaves Management <span class="sr-only"></span></a>
-                    </li>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                    <li class="nav-item active">
-                      <a class="nav-link" href="login">Reports <span class="sr-only"></span></a>
-                    </li>
-
-                    <li class="nav-item active">
-                      <a class="nav-link" href="home">Contact <span class="sr-only"></span></a>
-                    </li>
 
                     </ul>
 
@@ -121,7 +78,6 @@
         <main class="py-4">
             @yield('content')
         </main>
-        
     </div>
 </body>
 </html>
