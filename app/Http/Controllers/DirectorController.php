@@ -10,4 +10,11 @@ class DirectorController extends Controller
         $data = [];
         return view('cms.admin.admin_panel')->with($data);
     }
+
+    public function leavepermision(){
+        $data = [];
+        return view('cms.Director.director_panel')->with($data);
+    }
+
+    
 }

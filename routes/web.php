@@ -14,6 +14,11 @@ use App\Http\Controllers\ProfileController;
 |
 */
 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
 Route::group(['middleware' => ['auth']], function () {
 
     // Profile
@@ -41,38 +46,8 @@ Route::group(['middleware' => ['auth']], function () {
     // Admin Panel
     Route::get('/admin', 'AdminController@index')->name('Admin Panel');
 
+    // Director Panel
+    Route::get('/director', 'DirectorController@leavepermision')->name('Director Panel');
+
 });
 
-
-
-/*
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-<<<<<<< HEAD
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-
-Route::get('/home', function () {
-    return view('home');
-});
-
-Route::get('/adminpanal', function () {
-    return view('home');
-});
-
-
-
-
-
-
-=======
->>>>>>> 4b8189e077137433ec20c9906a2052ee592c8b2a
-*/
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
