@@ -7,14 +7,14 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Supervisor Panel</h1>
+                    <h1>Welcome to Supervisor Panel</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/home">Home</a></li>
-                        <li class="breadcrumb-item"><a href="/leavemanagement_supervisor">Leaves Management</a></li>
-                        <li class="breadcrumb-item"><a href="/reports_employee">Monthly attendance report</a></li>
-                        <li class="breadcrumb-item active">Supervisor Panel</li>
+                        <li class="breadcrumb-item"><a href="/supervisor">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/supervisorformone">LeavesApprovals</a></li>
+                        
+                        <li class="breadcrumb-item active">Supervisor-control-Panel</li>
                     </ol>
                 </div>
             </div>

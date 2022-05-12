@@ -7,13 +7,13 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Director Panel</h1>
+                    <h1>Welcome to Director Panel</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/home">Home</a></li>
-                        <li class="breadcrumb-item"><a href="/leavemanagement_director">Leaves Approval</a></li>
-                        <li class="breadcrumb-item active">Director Panel</li>
+                        <li class="breadcrumb-item"><a href="/director">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/directorformone">LeaveApprovals</a></li>
+                        <li class="breadcrumb-item active">Director-Control-Panel</li>
                     </ol>
                 </div>
             </div>

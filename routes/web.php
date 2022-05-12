@@ -77,5 +77,7 @@ Route::group(['middleware' => ['auth']], function () {
   //supervisor form1
  Route::get('/supervisorformone', 'SupervisorController@superleave')->name('supervisor Panel leave management');     //...done
 
+
+
 });
 

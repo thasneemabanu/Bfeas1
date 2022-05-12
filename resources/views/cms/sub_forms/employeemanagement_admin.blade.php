@@ -15,7 +15,7 @@
                         <li class="breadcrumb-item"><a href="/admin">Add Employee</a></li>
                         <li class="breadcrumb-item"><a href="/admin">Edit Employee</a></li>
                         <li class="breadcrumb-item"><a href="/admin">Delete employee</a></li>
-                        <li class="breadcrumb-item active">Admin Panel</li>
+                        <li class="breadcrumb-item active">Admin-control-Panel</li>
                     </ol>
                 </div>
             </div>

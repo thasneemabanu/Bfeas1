@@ -10,10 +10,12 @@
                     <h1>Director Leave Management</h1>
                 </div>
                 <div class="col-sm-6">
-                <!--    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/home">Home</a></li>
-                        <li class="breadcrumb-item"><a href="/leavemanagement_director">Leaves Approval</a></li>
-                        <li class="breadcrumb-item active">Director Panel form2</li>   -->
+                   <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/director">Home</a></li>
+                        
+                        <li class="breadcrumb-item active">Director-control-Panel</li> 
+                        <!-- options for approval and cancelling of leaves -->
+                        
                     </ol>
                 </div>
             </div>
