@@ -7,13 +7,14 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>supervisor- Leave Management</h1>
+                    <h1>Supervisor Panel</h1>
                 </div>
                 <div class="col-sm-6">
-                <!--    <ol class="breadcrumb float-sm-right">
+                    <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="/home">Home</a></li>
-                        <li class="breadcrumb-item"><a href="/leavemanagement_director">Leaves Approval</a></li>
-                        <li class="breadcrumb-item active">Director Panel form2</li>   -->
+                        <li class="breadcrumb-item"><a href="/leavemanagement_supervisor">Leaves Management</a></li>
+                        <li class="breadcrumb-item"><a href="/reports_employee">Monthly attendance report</a></li>
+                        <li class="breadcrumb-item active">Supervisor Panel</li>
                     </ol>
                 </div>
             </div>

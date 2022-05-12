@@ -23,6 +23,6 @@ class AdminController extends Controller
 
     public function leavemanagementadmin(){
         $data = [];
-        return view('sub_forms.leavemanagement_admin')->with($data);
+        return view('cms.sub_forms.leavemanagement_admin')->with($data);
     }
 }

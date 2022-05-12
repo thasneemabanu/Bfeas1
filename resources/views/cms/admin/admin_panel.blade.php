@@ -7,15 +7,15 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Admin Panel</h1>
+                    <h1>Welcome to Admin Panel</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/home">Home</a></li>
-                        <li class="breadcrumb-item"><a href="/leavemanagement_admin">Leaves Management</a></li>
-                        <li class="breadcrumb-item"><a href="/reports_admin">Monthly Report Management</a></li>
-                        <li class="breadcrumb-item"><a href="/employeemanagement_admin">Employee Management</a></li>
-                        <li class="breadcrumb-item active">Admin Panel</li>
+                        <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/adminformtwo">Leaves </a></li>
+                        <li class="breadcrumb-item"><a href="/adminformthree">Monthly Report </a></li>
+                        <li class="breadcrumb-item"><a href="/adminformone">Employee Management</a></li>
+                        <li class="breadcrumb-item active">Admin control Panel</li>
                     </ol>
                 </div>
             </div>
