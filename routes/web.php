@@ -44,10 +44,40 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/user/activateuser', 'UserController@activateUser');
 
     // Admin Panel
-    Route::get('/admin', 'AdminController@index')->name('Admin Panel');
+    Route::get('/admin', 'AdminController@index')->name('Admin Panel');                                //
+
+    // Admin Panel employee management
+ Route::get('/adminformone', 'AdminController@empmanagementadmin')->name('Admin Panel');               //
+
+   // Admin Panel Leave management
+ Route::get('/adminformtwo', 'AdminController@leavemanagementadmin')->name('Admin Panel');             //
+
+    // Admin Panel report management
+ Route::get('/adminformthree', 'AdminController@reportmanagementadmin')->name('Admin Panel');          //
+
+
+
 
     // Director Panel
-    Route::get('/director', 'DirectorController@leavepermision')->name('Director Panel');
+ Route::get('/director', 'DirectorController@leavepermision')->name('Director Panel');                  //..done
+ 
+   // Director Panel form 1
+ Route::get('/directorformone', 'DirectorController@leavemanagement')->name('Director Panel');          //..done
+
+ 
+   // Employee Panal
+ Route::get('/employee', 'EmployeeController@emppanel')->name('Employee Panel');                        //..done
+   // employee Panel form 1
+ Route::get('/employeeformone', 'EmployeeController@leavemanagementemployee')->name('Employee Panel'); //..done
+   //Employee panal form 2
+ Route::get('/employeeformtwo', 'EmployeeController@reportsemployee')->name('Employee Panel');         //..done 
+
+  // supervisor Panel
+ Route::get('/supervisor', 'SupervisorController@super')->name('supervisor Panel');                    //...done   
+  //supervisor form1
+ Route::get('/supervisorform1', 'SupervisorController@superleave')->name('supervisor Panel');     //notcoming//
+
+
 
 });
 
