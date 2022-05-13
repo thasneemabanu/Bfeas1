@@ -28,6 +28,8 @@
     </section>
     <!-- /.content -->
 
+    @include('includes.panels')
+
 </div>
 
 @endsection

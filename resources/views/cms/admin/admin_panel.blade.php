@@ -29,7 +29,16 @@
         </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
+    
 
+    @include('includes.panels')
 </div>
+
+
+
+
+
+
+
 
 @endsection

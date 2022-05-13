@@ -2,7 +2,7 @@
   <!-- Brand Logo -->
   <a href="/" class="brand-link">
     <!--<img src="{{asset('dist/img/logo.png')}}" alt="AdminLTE Logo" class="brand-image elevation-3">-->
-    <span class="brand-text font-weight-light"><h2>Biometrical Attendance  </h2></span>
+    <span class="brand-text font-weight-light"><h3>Attendance system  </h3></span>
   </a>
 
   <!-- Sidebar -->
@@ -44,7 +44,7 @@
                with font-awesome or any other icon font library -->
 
         <li class="nav-item">
-          <a href="#" class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}">
+          <a href="home" class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
               Dashboard
@@ -299,7 +299,7 @@
           <a href="/users" class="nav-link {{ request()->is('employee') ? 'active' : '' }}">
             <i class="nav-icon fa fa-user-tie"></i>
             <p>
-              Employee
+              Users
             </p>
           </a>
         </li>
@@ -338,23 +338,59 @@
         </li>
         @endcan
 
+       
+
+<!--
+
         <li class="nav-item">
-          <a href="/message" class="nav-link {{ request()->is('message') ? 'active' : '' }}">
+          <a href="#" class="nav-link {{ request()->is('message') ? 'active' : '' }}">
             <i class="nav-icon fas fa-comments"></i>
             <p>
-              Message
+              message 
+            </p>
+          </a>
+        </li>
+-->
+
+
+        
+        <li class="nav-item">
+          <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
+            <i class="nav-icon fa fa-power-off"></i>
+            <p>
+             Employee
             </p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="/users" class="nav-link {{ request()->is('users') ? 'active' : '' }}">
-            <i class="nav-icon fa fa-users"></i>
+          <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
+            <i class="nav-icon fa fa-power-off"></i>
             <p>
-              Users
+            Admin
             </p>
           </a>
         </li>
+
+
+        <li class="nav-item">
+          <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
+            <i class="nav-icon fa fa-power-off"></i>
+            <p>
+              Supervisor
+            </p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
+            <i class="nav-icon fa fa-power-off"></i>
+            <p>
+              Director
+            </p>
+          </a>
+        </li>
+-->
 
         <li class="nav-item">
           <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
