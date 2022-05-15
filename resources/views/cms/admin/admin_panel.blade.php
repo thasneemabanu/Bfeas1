@@ -1,6 +1,8 @@
-@extends('layouts.cms')
-
+@extends('layouts.cms') 
+   
 @section('content')
+
+
 <div class="content-wrapper" style="min-height: 2646.44px;">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -30,15 +32,9 @@
     </section>
     <!-- /.content -->
     
-
-    @include('includes.panels')
+    @include('includes.panels') 
+    
 </div>
-
-
-
-
-
-
 
 
 @endsection

@@ -3,7 +3,7 @@
 <head>
     @include('includes.head')
 </head>
-<body>
+
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
@@ -16,18 +16,24 @@
   @include('navbar.nav')
   <!-- Main Sidebar Container -->
   
+
   @include('includes.sidebar')
   
+
+
+
   <!-- Content Wrapper. Contains page content -->
-  @yield('content')
-  
+      @yield('content')     
+
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
+  <!-- 
+    <footer class="main-footer">
     Design & Developed by MNFT.Banu  
     <div class="float-right d-none d-sm-inline-block">
-      <b>StudentID 15903001</b> 
+    <b>StudentID 15903001</b> 
     </div>
-  </footer>
+  </footer>  
+ -->
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -36,8 +42,18 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
+
 @include('includes/toast')
 
 @include('includes/script')
+
+
+<!--- try for bootstrap objects in body for -->
+
 </body>
-</html>
+  <footer class="main-footer">
+    Design & Developed by MNFT.Banu  
+    <div class="float-right d-none d-sm-inline-block">
+      <b>StudentID 15903001</b> 
+    </div>
+  </footer>   

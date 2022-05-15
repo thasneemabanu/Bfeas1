@@ -2,8 +2,9 @@
   <!-- Brand Logo -->
   <a href="/" class="brand-link">
     <!--<img src="{{asset('dist/img/logo.png')}}" alt="AdminLTE Logo" class="brand-image elevation-3">-->
-    <span class="brand-text font-weight-light"><h3>Attendance system  </h3></span>
+    <span class="brand-text font-weight-light"><p >Attendance system  </p></span>
   </a>
+
 
   <!-- Sidebar -->
   <div class="sidebar">
@@ -21,6 +22,9 @@
         <a href="/profile" class="d-block">{{Auth::user()->name}}</a>
       </div>
     </div>
+
+
+
 
 
     <!-- SidebarSearch Form -->

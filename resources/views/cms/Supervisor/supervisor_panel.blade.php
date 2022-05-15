@@ -29,7 +29,7 @@
     </section>
     <!-- /.content -->
 
-    @include('includes.panels')
+   @include('includes.panels') 
 
 </div>
 
