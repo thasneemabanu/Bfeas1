@@ -1,5 +1,190 @@
 
 
+
+  <!-- 
+    <div class="form-group row">
+  <label for="staticEmail" class="col-sm-2 col-form-label">Employee ID</label>
+  <label for="staticEmail" class="col-sm-2 col-form-label"> Value</label>
+    
+  <div class="col-sm-10">
+  <label for="staticEmail" class="col-sm-2 col-form-label">Employee ID</label>
+  <label for="staticEmail" class="col-sm-2 col-form-label"> Value</label>
+    </div>
+</div>
+-->
+
+
+ <!--  
+    <thead>
+      <tr>
+        <th>EmployeeID</th>
+        <th>Department</th>
+      </tr>
+    </thead>
+-->
+
+<!--listing items -->
+<!--
+<ul class="list-group " > <br>
+  <li class="list-group-item  text-white bg-secondary">Monthly Available Holidays</li>
+  <li class="list-group-item">mercantile </li>
+  <li class="list-group-item">public</li>
+  <li class="list-group-item">banks</li>
+  <li class="list-group-item">other</li>
+</ul>
+-->
+
+
+
+
+ <!-- container open -->
+<div class="container">
+<form>
+
+<table class="table table-bordered table-striped">
+    <tbody id="myTable">
+      <tr>
+        <td><label for="staticEmail" class="col-sm-2 col-form-label">Employee ID</label></td>
+        <td><label for="staticEmail" class="col-sm-4 col-form-label"> </label></td>
+      </tr>
+      <tr>
+      <td><label for="staticEmail" class="col-sm-2 col-form-label">Department ID</label></td>
+        <td><label for="staticEmail" class="col-sm-4 col-form-label"> </label></td>
+      </tr>
+     </tbody>
+</table>
+
+
+<!-- it is the list in container --><!--
+<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+  <div class="card-header bg-secondary">Worked Days</div>
+  <div class="card-body">
+    <h5 class="card-title"></h5> </br></br>
+    <p class="card-text"></p>
+  </div>
+</div>
+<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+  <div class="card-header bg-secondary ">Available leaves</div>
+  <div class="card-body">
+    <h5 class="card-title"></h5></br></br>
+    <p class="card-text"></p>
+  </div>
+</div> -->
+<!-- //it is the end of list in container -->
+
+
+<div class="container-fluid mt-3"> <!--//start of mini container--> 
+  <div class="row">         <!--//start of mini row-->
+    <div class="col p-3 text-black">  <!--can write column name here-->
+          <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+          <div class="card-header bg-secondary">Worked Days</div>
+          <div class="card-body">
+          <h5 class="card-title"></h5> 
+          <p class="card-text">count</p></div>
+          
+ </div>  
+</div>
+
+<div class="col p-3 text-black"><!--can write column name here-->
+    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+      <div class="card-header bg-secondary ">Available leaves</div>
+      <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">count</p>
+  </div>
+</div>
+</div>
+
+
+  <div class="col p-3 text-black">Date 
+  <div class="container mt-3">
+  <div class="btn-group btn-group-sm">
+    <button type="button" class="btn btn-secondary">15</button>
+    <button type="button" class="btn btn-primary">May</button>
+    <button type="button" class="btn btn-secondary">2022</button>
+
+
+    </div>
+</div>
+  </div>
+</div>
+</div> <!--// end of mini container-->  
+<!---//drop down -->
+<!--
+    <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Link 1</a></li>
+      <li><a class="dropdown-item" href="#">Link 2</a></li>
+      <li><a class="dropdown-item" href="#">Link 3</a></li>
+      <li><a class="dropdown-item-text" href="#">Text Link</a></li>
+      <li><span class="dropdown-item-text">Just Text</span></li>
+    </ul>
+  </div>
+-->
+<!---//drop down -->
+
+
+
+<ul class="list-group">
+<li class="list-group-item  text-white bg-secondary">Monthly Available Holidays</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Mercantile Holidays
+    <span class="badge badge-primary badge-pill ">#</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Public Holidays
+    <span class="badge badge-primary badge-pill">#</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Bank Holidays
+    <span class="badge badge-primary badge-pill">#</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+   Other Holidays
+    <span class="badge badge-primary badge-pill">#</span>
+  </li>
+</ul>
+</div><!--full container close -->
+
+<!-- //////////////////////////////////////////////////////////// -->
+<!--footer -->
+  <div class="card-body">
+    <h5 class="card-title" ></h5> </br></br>
+    <p class="card-text"></p>
+  </div>
+
+</form>   <!-- //end of form -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  centered box 
+
+<div class="mx-auto" style="width: 500px;">
+<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+  <div class="card-header">Worked Days</div>
+  <div class="card-body">
+    <h5 class="card-title"></h5> </br></br>
+    <p class="card-text"></p>
+  </div>
+</div>
+</div>
+
+-->
+
+ 
+
          <!-- button types .....
           <button type="button" class="btn btn-block btn-secondary">Secondary</button>
           <button type="submit" class="btn btn-primary">Submit</button>
@@ -44,153 +229,4 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 -->
 
-
-<form>
-  <!-- 
-    <div class="form-group row">
-  <label for="staticEmail" class="col-sm-2 col-form-label">Employee ID</label>
-  <label for="staticEmail" class="col-sm-2 col-form-label"> Value</label>
-    
-  <div class="col-sm-10">
-  <label for="staticEmail" class="col-sm-2 col-form-label">Employee ID</label>
-  <label for="staticEmail" class="col-sm-2 col-form-label"> Value</label>
-    </div>
-</div>
--->
-
-
- <!--  
-    <thead>
-      <tr>
-        <th>EmployeeID</th>
-        <th>Department</th>
-      </tr>
-    </thead>
--->
-
-
-<table class="table table-bordered table-striped">
-    <tbody id="myTable">
-      <tr>
-        <td><label for="staticEmail" class="col-sm-2 col-form-label">Employee ID</label></td>
-        <td><label for="staticEmail" class="col-sm-4 col-form-label"> </label></td>
-      </tr>
-      <tr>
-      <td><label for="staticEmail" class="col-sm-2 col-form-label">Department ID</label></td>
-        <td><label for="staticEmail" class="col-sm-4 col-form-label"> </label></td>
-      </tr>
-     </tbody>
-</table>
-</br>
-
-
-
-<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-  <div class="card-header bg-secondary">Worked Days</div>
-  <div class="card-body">
-    <h5 class="card-title"></h5> </br></br>
-    <p class="card-text"></p>
-  </div>
-</div>
-
-
-
-<!--<div class="row">
-    <div class="col">left</div>
-    <div class="col ml-auto">content needs to be right aligned</div>
-</div>
--->
-
-<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-  <div class="card-header bg-secondary ">Available leaves</div>
-  <div class="card-body">
-    <h5 class="card-title"></h5></br></br>
-    <p class="card-text"></p>
-  </div>
-</div>
-
-
-<!--listing items -->
-<!--
-<ul class="list-group " > <br>
-  <li class="list-group-item  text-white bg-secondary">Monthly Available Holidays</li>
-  <li class="list-group-item">mercantile </li>
-  <li class="list-group-item">public</li>
-  <li class="list-group-item">banks</li>
-  <li class="list-group-item">other</li>
-</ul>
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<ul class="list-group">
-
-<li class="list-group-item  text-white bg-secondary">Monthly Available Holidays</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-    Mercantile Holidays
-    <span class="badge badge-primary badge-pill ">#</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Public Holidays
-    <span class="badge badge-primary badge-pill">#</span>
-  </li>
-
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Bank Holidays
-    <span class="badge badge-primary badge-pill">#</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-   Other Holidays
-    <span class="badge badge-primary badge-pill"></span>
-  </li>
-
-</ul>
-
-
-
-
-
-
-
-
-
-
-<!-- seperator from footer -->
-  <div class="card-body">
-    <h5 class="card-title" ></h5> </br></br>
-    <p class="card-text"></p>
-  </div>
-
-</form>
-
-<!--  centered box 
-
-<div class="mx-auto" style="width: 500px;">
-<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-  <div class="card-header">Worked Days</div>
-  <div class="card-body">
-    <h5 class="card-title"></h5> </br></br>
-    <p class="card-text"></p>
-  </div>
-</div>
-</div>
-
--->
-
-  
 

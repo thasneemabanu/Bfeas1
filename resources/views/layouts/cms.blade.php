@@ -18,8 +18,6 @@
   
 
   @include('includes.sidebar')
-  
-
 
 
   <!-- Content Wrapper. Contains page content -->
@@ -47,13 +45,15 @@
 
 @include('includes/script')
 
-
 <!--- try for bootstrap objects in body for -->
 
+
 </body>
+
   <footer class="main-footer">
     Design & Developed by MNFT.Banu  
     <div class="float-right d-none d-sm-inline-block">
       <b>StudentID 15903001</b> 
     </div>
+    
   </footer>   
