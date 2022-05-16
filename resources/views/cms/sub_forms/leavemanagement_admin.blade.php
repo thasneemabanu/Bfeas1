@@ -13,7 +13,7 @@
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="/employee">Home</a></li>
                         <li class="breadcrumb-item"><a href="/employeeformtwo">Reports </a></li>
-                        <li class="breadcrumb-item active">Employee-control-panel</li>   
+                        <li class="breadcrumb-item active">Admin-control-panel</li>   
                     </ol>
                 </div>
             </div>

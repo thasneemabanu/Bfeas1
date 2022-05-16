@@ -19,7 +19,7 @@
             </div>
         </div><!-- /.container-fluid -->
     </section>
-
+<!------------------------------------------------------------------->
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
@@ -40,11 +40,11 @@
       <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
       <label for="pwd">Number_Of_Days</label>
     </div>
-
+<!------------------------------------------------------------------->
                    <button type="submit" class="btn btn-primary">Request to Supervisor</button>
                    <button type="submit" class="btn btn-secondary">Cancel</button> <br><br><br>
 
-
+<!------------------------------------------------------------------->
 
 
                    <div class="mb-3 mt-3">
@@ -58,7 +58,7 @@
   </div>
      <input disabled type="text" class="form-control" placeholder="Reason for Approval">
 </div>
-
+<!------------------------------------------------------------------->
 <div class="input-group mb-3">
        <div class="input-group-text">
      <input disabled type="radio">
@@ -68,12 +68,7 @@
 </div> <br><br><br>
 
 
-
-
-
-
-
-
+<!------------------------------------------------------------------->
                  <div class="mb-3 mt-3">
                    <label for="comment">Director Approval</label>
                    <textarea disabled class="form-control" rows="5" id="comment" name="text"></textarea>
@@ -85,7 +80,7 @@
   </div>
      <input disabled type="text" class="form-control" placeholder="Reason for Approval">
 </div>
-
+<!------------------------------------------------------------------->
 <div class="input-group mb-3">
        <div class="input-group-text">
      <input disabled type="radio">
@@ -94,20 +89,12 @@
 </div>
 </div> <br><br><br>
 
-
-
-
-
-
-
-
-
+<!------------------------------------------------------------------->
 
             </form>
         </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-
 </div>
 
 @endsection

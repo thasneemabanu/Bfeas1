@@ -3,6 +3,7 @@
 @section('content')
 <div class="content-wrapper" style="min-height: 2646.44px;">
     <!-- Content Header (Page header) -->
+<!---------------------------------------------------------->
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -13,7 +14,7 @@
                    <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="/director">Home</a></li>
                         
-                        <li class="breadcrumb-item active">Director-control-Panel</li> 
+                        <li class="breadcrumb-item active">Supervisor-control-Panel</li> 
                         <!-- options for approval and cancelling of leaves -->
                         
                     </ol>
@@ -21,10 +22,11 @@
             </div>
         </div><!-- /.container-fluid -->
     </section>
-
+<!---------------------------------------------------------->
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
+ <!---------------------------------------------------------->
         <form action="/action_page.php">
                  <div class="mb-3 mt-3">
                    <label for="comment">Leave request from Employee/Admin </label>
@@ -42,18 +44,14 @@
       <input disabled type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
       <label for="pwd">Number_Of_Days</label>
     </div>
-    
+   <!----------------------------------------------------------> 
     <br>
     <br>      
-
-
                    <div class="mb-3 mt-3">
                    <label for="comment">Supervisor Approval</label>
                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
                  </div>
-                 
-
-                 
+                               
  <div class="form-floating mb-3 mt-3">           
    <div class="input-group mb-3">
        <div class="input-group-text">
@@ -68,15 +66,20 @@
   </div>
      <input type="text" class="form-control" placeholder="Reason for Rejection ">
 </div>
-<button type="submit" class="btn btn-primary">Submit</button>    <!-- has to be disabled in employee leave or admin leave and director -->
-                                                                       
-</div>
+<button type="submit" class="btn btn-primary">Submit</button>    <!-- has to be disabled in employee leave or admin leave and director -->                                                                      
+</div></br><br><br>
+<!---------------------------------------------------------->
 
+</form>
+<!---------------------------------------------------------->
+<!--
+<div class="form-check">
+      <input type="radio" class="form-check-input" disabled>
+      <label class="form-check-label">Option 3</label>
+    </div>
 
-</br><br><br>
-
-
-            </form>
+-->            
+ <!---------------------------------------------------------->
         </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->

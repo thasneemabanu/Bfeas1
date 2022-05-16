@@ -85,14 +85,21 @@
   </div>
      <input type="text" class="form-control" placeholder="Reason for Rejection ">
 </div>
+
+
+<!--
+<div class="form-check">
+      <input type="radio" class="form-check-input" disabled>
+      <label class="form-check-label">Option 3</label>
+    </div>
+
+-->
 <button type="submit" class="btn btn-primary">Submit</button>    <!-- has to be disabled in employee leave or admin leave -->
   
 </div>
 
 
-</br>
-</br>
-</br>
+</br></br></br>
 
             </form>
         </div><!-- /.container-fluid -->
@@ -102,4 +109,7 @@
 </div>
 
 @endsection
+
+
+
 
