@@ -359,7 +359,7 @@
 
         
         <li class="nav-item">
-          <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
+          <a href="/employee" class="nav-link" >
             <i class="nav-icon fa fa-power-off"></i>
             <p>
              Employee
@@ -368,7 +368,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
+          <a href="/admin" class="nav-link" >
             <i class="nav-icon fa fa-power-off"></i>
             <p>
             Admin
@@ -378,7 +378,7 @@
 
 
         <li class="nav-item">
-          <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
+          <a href="/supervisor" class="nav-link" >
             <i class="nav-icon fa fa-power-off"></i>
             <p>
               Supervisor
@@ -387,7 +387,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
+          <a href="/director" class="nav-link" >
             <i class="nav-icon fa fa-power-off"></i>
             <p>
               Director
