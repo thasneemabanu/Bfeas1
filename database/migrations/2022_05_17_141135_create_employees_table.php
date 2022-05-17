@@ -13,19 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('userms', function (Blueprint $table) {
-            $table->UnsignedBigInteger('User_ID');
-            $table->string('User_Name');
-            $table->date('date_of_birth');
-            $table->UnsignedBigInteger('Department_ID');
-            $table->String('Contact_No');
-            $table->date('Joined_Date');
-            $table->String('Job_Role');
+        Schema::create('employees', function (Blueprint $table) {
+            $table->id();
             $table->timestamps();
         });
-
-
-        
     }
 
     /**
@@ -35,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('userms');
+        Schema::dropIfExists('employees');
     }
 };

@@ -14,9 +14,12 @@ return new class extends Migration
     public function up()
     {
         Schema::create('roles', function (Blueprint $table) {
-            $table->UnsignedBigInteger('Role_ID');
-            $table->UnSignedBigInteger('User_ID');
+           
+            $table->UnsignedBigInteger('Role_ID');  
+            $table->String('Role_Name');   
             $table->UnSignedBigInteger('Department_ID');
+            $table->UnSignedBigInteger('Employee_ID');
+            $table->String('Employee_Name');    
             $table->timestamps();
         });
     }

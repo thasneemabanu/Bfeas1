@@ -20,15 +20,43 @@
                     </ol>
                 </div>
             </div>
+
+<!---------------------------------------------------------->
+
+
+<div class="dropdown">
+  <button type="button" class="btn btn-secondary dropdown-toggle " data-bs-toggle="dropdown">
+    Month &nbsp;&nbsp;
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Link 1</a></li>
+    <li><a class="dropdown-item" href="#">Link 2</a></li>
+    <li><a class="dropdown-item" href="#">Link 3</a></li>
+  </ul>
+</div> <br>
+<div class="dropdown">
+  <button type="button" class="btn btn-secondary dropdown-toggle " data-bs-toggle="dropdown">
+    Year &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Link 1</a></li>
+    <li><a class="dropdown-item" href="#">Link 2</a></li>
+    <li><a class="dropdown-item" href="#">Link 3</a></li>
+  </ul> 
+</div> 
+<br>
+<!---------------------------------------------------------->
         </div><!-- /.container-fluid -->
     </section>
-
+<!---------------------------------------------------------->
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-            
+          
 <!---------------------------------------------------------->
 
+
+<!--
 <form name="form1" id="form1" action="/action_page.php">
     <div class="row">
                     <div class="col-sm-12">
@@ -40,12 +68,12 @@
                          <option value="" selected="selected">  </option>
                           </select>
                       </th> 
-                      <th class="dateclassmonth" tabindex="2" aria-controls="example2" rowspan="1" colspan="5" > Month
+                      <th class="dateclassmonth" tabindex="2" aria-controls="example2" rowspan="1" colspan="5" > Month 
                        <select name="month" id="monthvalue">
                          <option value="" selected="selected">  </option>
                         </select> 
                       </th>
-                      <th class="year" tabindex="0" aria-controls="example3" rowspan="1" colspan="8" >Year
+                      <th class="year" tabindex="0" aria-controls="example3" rowspan="1" colspan="8" >Year 
                       <select name="chapter" id="chapter">
                         <option value="" selected="selected">  </option>
                       </select>
@@ -55,6 +83,9 @@
                   </thead>
          </table> 
 </form><br><br>
+-->
+
+
 <!--------------------------------------------------------------------->
 
 
@@ -112,11 +143,21 @@
                   <thead>
                   <tr>
                       <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" >Employee_ID</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >DepartmentID</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Department Name</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Date</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Status</th>
+                      
+
+<!-- original--><!--
+                      <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" >Employee_ID</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">DepartmentID</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Status</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Department Name</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Date</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Status</th>
-                  </tr>  
+
+-->
+                  </tr> 
                   </thead>
                   <tbody>
 <!---------------------------------------------------------->
@@ -222,10 +263,10 @@
                                 <li class="paginate_button page-item ">
                                     <a href="#" aria-controls="example1" data-dt-idx="2" tabindex="0" class="page-link">2</a>
                                 </li>
-                         <!--   <li class="paginate_button page-item ">
+                                <li class="paginate_button page-item ">
                                     <a href="#" aria-controls="example1" data-dt-idx="3" tabindex="0" class="page-link">3</a>
                                 </li>
-                                <li class="paginate_button page-item ">
+                             <!--   <li class="paginate_button page-item ">
                                     <a href="#" aria-controls="example1" data-dt-idx="4" tabindex="0" class="page-link">4</a>
                                 </li><li class="paginate_button page-item ">
                                     <a href="#" aria-controls="example1" data-dt-idx="5" tabindex="0" class="page-link">5</a>

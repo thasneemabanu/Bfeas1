@@ -15,14 +15,14 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Employee Management- Admin</h1>
+                    <h1>employeemanagement - Admin</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                    <li class="breadcrumb-item"><a href="/admin"> Home</a></li>
-                        <li class="breadcrumb-item"><a href="/admin">Add Employee</a></li>
-                        <li class="breadcrumb-item"><a href="/admin">Edit Employee</a></li>
-                        <li class="breadcrumb-item"><a href="/admin">Delete employee</a></li>
+                        <li class="breadcrumb-item"><a href="/adminformone">Add Employee</a></li>
+                        <li class="breadcrumb-item"><a href="/adminformone">Edit Employee</a></li>
+                        
                         <li class="breadcrumb-item active">Admin-control-Panel</li>
                        
                     </ol>
@@ -35,9 +35,50 @@
     <section class="content">
         <div class="container-fluid">
             
+        <div class="container-fluid mt-3 w3-border w3-padding w3-round ws-grey">
+    <div class="mb-3 mt-3">
+      <label for="empid" class="fxorm-label">Employee ID</label>
+      <input type="text" class="form-control" style="margin-top:5px!important" id="email" placeholder="Enter email" name="email">
+      <!--<div class="form-text">Must be a valid email address.</div>-->
+    </div>
+    <div class="mb-3 mt-3">
+      <label for="email" class="fxorm-label">Email</label>
+      <input type="email" class="form-control" style="margin-top:5px!important" id="email" placeholder="Enter email" name="email">
+      <!--<div class="form-text">Must be a valid email address.</div>-->
+    </div>
+
+    <div class="mb-3 mt-3">
+      <label for="empname" class="fxorm-label">Employee Name</label>
+      <input type="text" class="form-control" style="margin-top:5px!important" id="email" placeholder="Enter email" name="email">
+      <!--<div class="form-text">Must be a valid email address.</div>-->
+    </div><div class="mb-3 mt-3">
+      <label for="departmentid" class="fxorm-label">Department ID</label>
+      <input type="text" class="form-control" style="margin-top:5px!important" id="email" placeholder="Enter email" name="email">
+      <!--<div class="form-text">Must be a valid email address.</div>-->
+    </div>
+    <div class="mb-3 mt-3">
+      <label for="departmentname" class="fxorm-label">Department Name</label>
+      <input type="text" class="form-control" style="margin-top:5px!important" id="email" placeholder="Enter email" name="email">
+      <!--<div class="form-text">Must be a valid email address.</div>-->
+    </div>
+
+    
+    
+    <button type="button" class="btn btn-primary mb-3">Add Employee</button>
+    <button type="button" class="btn btn-primary mb-3">Edit Employee</button>
+    
+</div>
+
+
+
         </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
 
 </div>
 @endsection
+
+
+
+
+

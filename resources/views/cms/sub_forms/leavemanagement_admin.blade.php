@@ -11,8 +11,8 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/employee">Home</a></li>
-                        <li class="breadcrumb-item"><a href="/employeeformtwo">Reports </a></li>
+                        <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/adminformthree">Reports </a></li>
                         <li class="breadcrumb-item active">Admin-control-panel</li>   
                     </ol>
                 </div>
@@ -44,9 +44,6 @@
                    <button type="submit" class="btn btn-primary">Request to Supervisor</button>
                    <button type="submit" class="btn btn-secondary">Cancel</button> <br><br><br>
 
-
-
-
                    <div class="mb-3 mt-3">
                    <label for="comment">Supervisor Approval</label>
                    <textarea disabled class="form-control" rows="5" id="comment" name="text"></textarea>
@@ -67,13 +64,6 @@
 </div>
 </div> <br><br><br>
 
-
-
-
-
-
-
-
                  <div class="mb-3 mt-3">
                    <label for="comment">Director Approval</label>
                    <textarea disabled class="form-control" rows="5" id="comment" name="text"></textarea>
@@ -93,14 +83,6 @@
      <input disabled type="text" class="form-control" placeholder="Reason for Rejection ">
 </div>
 </div> <br><br><br>
-
-
-
-
-
-
-
-
 
 
             </form>
