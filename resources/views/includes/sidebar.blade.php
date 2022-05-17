@@ -50,11 +50,14 @@
         <li class="nav-item">
           <a href="home" class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}">
             <i class="nav-icon fas fa-tachometer-alt"></i>
+            
             <p>
               Dashboard
             </p>
           </a>
         </li>
+
+        <br>
         <!--
           <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
@@ -301,13 +304,14 @@
 
         <li class="nav-item">
           <a href="/users" class="nav-link {{ request()->is('employee') ? 'active' : '' }}">
-            <i class="nav-icon fa fa-user-tie"></i>
+            <!--<i class="nav-icon fa fa-user-tie"></i> -->
+            <i class="fa fa-users" ></i>
             <p>
               Users
             </p>
           </a>
         </li>
-
+<br>
         @can('task.task')
         <li class="nav-item">
           <a href="/task" class="nav-link {{ request()->is('task') ? 'active' : '' }}">
@@ -360,7 +364,7 @@
         
         <li class="nav-item">
           <a href="/employee" class="nav-link" >
-            <i class="nav-icon fa fa-power-off"></i>
+          <i class="fa fa-user-circle" ></i>
             <p>
              Employee
             </p>
@@ -369,7 +373,7 @@
 
         <li class="nav-item">
           <a href="/admin" class="nav-link" >
-            <i class="nav-icon fa fa-power-off"></i>
+          <i class="fa fa-user-circle" ></i>
             <p>
             Admin
             </p>
@@ -379,7 +383,7 @@
 
         <li class="nav-item">
           <a href="/supervisor" class="nav-link" >
-            <i class="nav-icon fa fa-power-off"></i>
+          <i class="fa fa-user-circle" ></i>
             <p>
               Supervisor
             </p>
@@ -388,17 +392,19 @@
 
         <li class="nav-item">
           <a href="/director" class="nav-link" >
-            <i class="nav-icon fa fa-power-off"></i>
+          
+          <i class="fa fa-user-circle" ></i>
             <p>
               Director
             </p>
           </a>
         </li>
 
-
+<br><br>
         <li class="nav-item">
           <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
-            <i class="nav-icon fa fa-power-off"></i>
+           <!-- <i class="nav-icon fa fa-power-off"></i>-->
+            <i class="fa fa-power-off"></i>
             <p>
               Logout
             </p>
