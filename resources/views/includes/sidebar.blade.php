@@ -374,6 +374,7 @@
         <li class="nav-item">
           <a href="/admin" class="nav-link" >
           <i class="fa fa-user-circle" ></i>
+        
             <p>
             Admin
             </p>
