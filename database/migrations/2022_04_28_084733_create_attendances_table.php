@@ -14,12 +14,18 @@ return new class extends Migration
     public function up()
     {
         Schema::create('attendances', function (Blueprint $table) {
-            $table->UnsignedBigInteger('User_ID');
-            $table->UnsignedBigInteger('Department_ID');
+            $table->UnsignedBigInteger('employee_id');
+            $table->UnsignedBigInteger('department_id');
             $table->date('date');
-            $table->time('Time_of_entry');
-            $table->time('Time_of_Exit');
+            $table->time('time_of_entry');
+            $table->time('time_of_exit');
             $table->timestamps();
+        });
+
+        Schema::table('attendances',function(Blueprint $table){
+            $table->foreign('employee_id')->references('id')->on('users');
+            $table->foreign('department_id')->references('id')->on('departments');
+            $table->unique(['employee_id','date']);
         });
     }
 

@@ -14,12 +14,19 @@ return new class extends Migration
     public function up()
     {
         Schema::create('holidays', function (Blueprint $table) {
-            $table->UnSignedInteger('Holiday_ID');
-            $table->String('Holiday_Description');
-            $table->date('Date_holidayFalls');
-            $table->UnSignedInteger('Department_ID');
+           // $table->id();
+          /*  $table->UnSignedInteger('Holiday_ID');*/
+            $table->date('holiday_fall_date');
+            $table->String('holiday_description');
+            $table->UnSignedInteger('department_id');
             $table->timestamps();
         });
+
+        Schema::table('holidays',function(Blueprint $table){
+            $table->foreign('department_id')->references('id')->on('departments');
+            $table->primary('holiday_fall_date');
+        });
+
     }
 
     /**
