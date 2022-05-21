@@ -17,8 +17,8 @@ return new class extends Migration
            // $table->id();
           /*  $table->UnSignedInteger('Holiday_ID');*/
             $table->date('holiday_fall_date');
-            $table->String('holiday_description');
-            $table->UnSignedInteger('department_id');
+            $table->string('holiday_description');
+            $table->unsignedInteger('department_id');
             $table->timestamps();
         });
 

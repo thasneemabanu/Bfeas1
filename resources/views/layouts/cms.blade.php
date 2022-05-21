@@ -51,7 +51,7 @@
 </body>
 
   <footer class="main-footer">
-    Design & Developed by MNFT.Banu  
+   <b> Design & Developed by : MNFT .Banu</b>
     <div class="float-right d-none d-sm-inline-block">
       <b>StudentID 15903001</b> 
     </div>
