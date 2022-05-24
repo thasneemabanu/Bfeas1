@@ -26,20 +26,16 @@
 
     </section>
 
-    <!-- Main content -->
-    <section class="content">
+     <!-- Main content -->
+     <section class="content">
         <div class="container-fluid">
             
         </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-    
-    @include('includes.panels') 
-    
+
+    @include('includes.panels')  
+
 </div>
 
 @endsection
-
-</div><!--img-->
-
-<!--<div class="bg-image" style=background-image:url('/img/two.jpg'); height:100%>-->

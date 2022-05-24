@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('holidays', function (Blueprint $table) {
            // $table->id();
-          /*  $table->UnSignedInteger('Holiday_ID');*/
+          /*  $table->unsignedInteger('holiday_id');*/
             $table->date('holiday_fall_date');
             $table->string('holiday_description');
-            $table->unsignedInteger('department_id');
+            $table->unsignedBigInteger('department_id');
             $table->timestamps();
         });
 

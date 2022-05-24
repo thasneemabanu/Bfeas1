@@ -311,7 +311,7 @@
             </p>
           </a>
         </li>
-<br>
+
         @can('task.task')
         <li class="nav-item">
           <a href="/task" class="nav-link {{ request()->is('task') ? 'active' : '' }}">
@@ -401,7 +401,17 @@
           </a>
         </li>
 
-<br><br>
+        <li class="nav-item">
+          <a href="/" class="nav-link" >
+          <i class="fa fa-address" ></i>
+          <!--<i class="fa fa-user-circle" ></i>-->
+            <p>
+              Employee Attendance
+            </p>
+          </a>
+        </li>
+
+
         <li class="nav-item">
           <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
            <!-- <i class="nav-icon fa fa-power-off"></i>-->

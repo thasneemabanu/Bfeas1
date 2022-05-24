@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('attendances', function (Blueprint $table) {
-            $table->UnsignedBigInteger('employee_id');
-            $table->UnsignedBigInteger('department_id');
+            $table->unsignedBigInteger('employee_id');
+            $table->unsignedBigInteger('department_id');
             $table->date('date');
             $table->time('time_of_entry');
             $table->time('time_of_exit');

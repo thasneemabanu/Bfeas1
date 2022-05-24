@@ -15,17 +15,19 @@ return new class extends Migration
     {
         Schema::create('leaves', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('employee_id');
+            $table->unsignedBigInteger('employee_id');
             $table->datetime('requested_on');
-            $table->unsignedInteger('recommender_id');
-            $table->datetime('recommended_on');
-            $table->unsignedInteger('approver_id')->nullable();
+            $table->unsignedBigInteger('recommender_id')->nullable();
+            $table->datetime('recommended_on')->nullable();
+            $table->unsignedBigInteger('approver_id')->nullable();
             $table->datetime('approved_on')->nullable();
-            $table->unsignedInteger('department_id');
+            $table->unsignedBigInteger('department_id');
             $table->string('leave_type');
             $table->date('date');
             $table->string('leave_status');
+            $table->LongText('leave_reason'); 
             $table->timestamps();
+            
         });
 
         Schema::table('leaves',function(Blueprint $table){

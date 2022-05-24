@@ -17,9 +17,9 @@
 </table>
 
 
-<div class="container-fluid mt-3"> <!--//start of mini container--> 
+<div class="container-fluid mt-3">    <!--//start of mini container--> 
 <div class="bg-image" style=background-image:url('/img/light7.jpg') ;>
-  <div class="row">         <!--//start of mini row-->
+  <div class="row">                   <!--//start of mini row-->
     <div class="col p-3 text-black">  <!--can write column name here-->
           <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
           <div class="card-header bg-secondary"><b>Worked Days</b></div>
@@ -29,8 +29,7 @@
  </div>  
 </div>
 
-<div class="col p-3 text-black"><!--can write column name here-->
-   
+<div class="col p-3 text-black">      <!--can write column name here-->  
 <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
       <div class="card-header bg-secondary "><b>Available leaves</b></div>
       <div class="card-body">
@@ -40,30 +39,26 @@
   </div>
 </div>
 
-
 <div class="col p-3 text-white"><b> Date </b>
  <div class="container mt-3">
   <div class="btn-group btn-group-sm">
-    
-<div class="container overflow-hidden">
-  <div class="row gx-2">
-    <div class="col">
+    <div class="container overflow-hidden">
+      <div class="row gx-2">
+       <div class="col">
        <div class="p-1"> <button type="button" class="btn btn-secondary">15</button></div>
-    </div>
-
-    <div class="col">
-       <div class="p-1"><button type="button" class="btn btn-primary">May</button></div>     
-    </div>
-
-    <div class="col">
-      <div class="p-1"> <button type="button" class="btn btn-secondary">2022</button> </div>     
-    </div>
-  </div>
+      </div>
+ <div class="col">
+    <div class="p-1"><button type="button" class="btn btn-primary">May</button></div>     
+ </div>
+ <div class="col">
+   <div class="p-1"> <button type="button" class="btn btn-secondary">2022</button> </div>     
+ </div>
+</div>
 </div>
 
-  </div>
 </div>
-  </div>
+</div>
+</div>
 
 
 </div>
