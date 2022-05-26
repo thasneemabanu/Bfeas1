@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('departments', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('employee_id');
             $table->string('department_name');
             $table->string('desciption');
            // $table->timestamps();

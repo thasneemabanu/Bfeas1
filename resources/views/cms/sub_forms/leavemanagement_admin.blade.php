@@ -11,9 +11,9 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/admin">Home</a></li>
-                        <li class="breadcrumb-item"><a href="/adminformthree">Reports </a></li>
-                        <li class="breadcrumb-item active">Admin-control-panel</li>   
+                        <li class="breadcrumb-item"><a href="/admin"><b>Home</b></a></li>
+                        <li class="breadcrumb-item"><a href="/adminformthree"><b>Reports </b></a></li>
+                        <li class="breadcrumb-item active"><b>Admin-control-panel</b></li>   
                     </ol>
                 </div>
             </div>

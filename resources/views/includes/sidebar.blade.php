@@ -50,14 +50,12 @@
         <li class="nav-item">
           <a href="home" class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}">
             <i class="nav-icon fas fa-tachometer-alt"></i>
-            
             <p>
               Dashboard
             </p>
           </a>
         </li>
 
-        <br>
         <!--
           <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
@@ -364,7 +362,7 @@
         
         <li class="nav-item">
           <a href="/employee" class="nav-link" >
-          <i class="fa fa-user-circle" ></i>
+          <i class="fa fa-male" >&nbsp&nbsp</i>
             <p>
              Employee
             </p>
@@ -373,8 +371,7 @@
 
         <li class="nav-item">
           <a href="/admin" class="nav-link" >
-          <i class="fa fa-user-circle" ></i>
-        
+          <i class="fa fa-lock" >&nbsp</i>
             <p>
             Admin
             </p>
@@ -384,7 +381,7 @@
 
         <li class="nav-item">
           <a href="/supervisor" class="nav-link" >
-          <i class="fa fa-user-circle" ></i>
+          <i class="fa fa-tasks" >&nbsp</i>
             <p>
               Supervisor
             </p>
@@ -394,28 +391,28 @@
         <li class="nav-item">
           <a href="/director" class="nav-link" >
           
-          <i class="fa fa-user-circle" ></i>
+          <i class="fa fa-address-card" >&nbsp</i>
             <p>
               Director
             </p>
           </a>
         </li>
 
-        <li class="nav-item">
+        <!--<li class="nav-item">
           <a href="/" class="nav-link" >
-          <i class="fa fa-address" ></i>
-          <!--<i class="fa fa-user-circle" ></i>-->
+          <i class="fa fa-address-card" >&nbsp</i>
             <p>
               Employee Attendance
             </p>
           </a>
         </li>
-
+-->
+      
 
         <li class="nav-item">
           <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
            <!-- <i class="nav-icon fa fa-power-off"></i>-->
-            <i class="fa fa-power-off"></i>
+            <i class="fa fa-power-off">&nbsp</i>
             <p>
               Logout
             </p>

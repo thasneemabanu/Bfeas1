@@ -14,11 +14,11 @@
                 <div class="col-sm-6" >
                     
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/admin">Home</a></li>
-                        <li class="breadcrumb-item"><a href="/adminformtwo">Leaves </a></li>
-                        <li class="breadcrumb-item"><a href="/adminformthree">Monthly Report </a></li>
-                        <li class="breadcrumb-item"><a href="/adminformone">Employee Management</a></li>
-                        <li class="breadcrumb-item active">Admin control Panel</li>
+                        <li class="breadcrumb-item"><a href="/admin"><b>Home</b></a></li>
+                        <li class="breadcrumb-item"><a href="/adminformtwo"><b>Leaves</b> </a></li>
+                        <li class="breadcrumb-item"><a href="/adminformthree"><b>Attendance Report</b> </a></li>
+                        <li class="breadcrumb-item"><a href="/adminformone"><b>Employee Management</b></a></li>
+                        <li class="breadcrumb-item active"><b>Admin control Panel</b></li>
                     </ol>
                 </div>
             </div>

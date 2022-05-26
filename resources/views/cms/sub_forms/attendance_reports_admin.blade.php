@@ -12,8 +12,8 @@
                 </div>
                 <div class="col-sm-6 ">
                     <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="/admin">Home</a></li>
-                    <li class="breadcrumb-item active">Admin-Control-Panel</li> 
+                    <li class="breadcrumb-item"><a href="/admin"><b>Home</b></a></li>
+                    <li class="breadcrumb-item active"><b>Admin-Control-Panel</b></li> 
                     
                     <!-- report generating options -->
 
@@ -35,13 +35,13 @@
   </ul>
 </div> <br>
 <div class="dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle " data-bs-toggle="dropdown">
+  <button type="date" class="btn btn-secondary dropdown-toggle " data-bs-toggle="dropdown">
     Year &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   </button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Link 1</a></li>
     <li><a class="dropdown-item" href="#">Link 2</a></li>
-    <li><a class="dropdown-item" href="#">Link 3</a></li>
+    <li><a class="dropdown-item" href="#">Link 3</a></li> 
   </ul> 
 </div> 
 <br>
@@ -55,62 +55,9 @@
           
 <!---------------------------------------------------------->
 
-
-<!--
-<form name="form1" id="form1" action="/action_page.php">
-    <div class="row">
-                    <div class="col-sm-12">
-                        <table id="example1" >
-                  <thead>
-                  <tr>
-                      <th class="dateclass" tabindex="0" aria-controls="example1" rowspan="1" colspan="2" >Date </Label>
-                          <select name="date" id="datevalue">
-                         <option value="" selected="selected">  </option>
-                          </select>
-                      </th> 
-                      <th class="dateclassmonth" tabindex="2" aria-controls="example2" rowspan="1" colspan="5" > Month 
-                       <select name="month" id="monthvalue">
-                         <option value="" selected="selected">  </option>
-                        </select> 
-                      </th>
-                      <th class="year" tabindex="0" aria-controls="example3" rowspan="1" colspan="8" >Year 
-                      <select name="chapter" id="chapter">
-                        <option value="" selected="selected">  </option>
-                      </select>
-                      </th>
-                  
-                  </tr>  
-                  </thead>
-         </table> 
-</form><br><br>
--->
-
-
-<!--------------------------------------------------------------------->
-
-
-<!--
-    <div class="card-header">
-                <h3 class="card-title">Monthlyreport</h3>
-
-                <div class="card-tools">
-                  <div class="input-group input-group-sm" style="width: 150px;">
-                    <input disabled type="text" name="table_search" class="form-control float-right" placeholder="Employee_ID">
-
-                    <div class="input-group-append">
-                      <button type="submit" class="btn btn-default">
-                        <i class="fas fa-search"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
--->
-<!---------------------------------------------------------->
-
 <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Monthly reports </h3>
+                <h3 class="card-title">Monthly Attendance report </h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -144,19 +91,10 @@
                   <tr>
                       <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" >Employee_ID</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >DepartmentID</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Department Name</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Date</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Status</th>
-                      
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Attendance Status</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Check in time</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Check out time</th>
 
-<!-- original--><!--
-                      <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" >Employee_ID</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">DepartmentID</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Department Name</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Date</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Status</th>
-
--->
                   </tr> 
                   </thead>
                   <tbody>
@@ -229,19 +167,7 @@
                     <td></td>
                     <td style=""></td>
                   </tr></tbody>
-<!---------------------------------------------------------->                    
-<!--  
-    <tfoot>
-        <tr>
-            <th rowspan="1" colspan="1">Rendering engine</th>
-            <th rowspan="1" colspan="1">Browser</th>
-            <th rowspan="1" colspan="1">Platform(s)</th>
-            <th rowspan="1" colspan="1">Engine version</th>
-            <th rowspan="1" colspan="1" style="">CSS grade</th>
-        </tr>
-    </tfoot>
-     -->
-<!---------------------------------------------------------->
+
                 </table>
             </div>
         </div>
@@ -266,14 +192,12 @@
                                 <li class="paginate_button page-item ">
                                     <a href="#" aria-controls="example1" data-dt-idx="3" tabindex="0" class="page-link">3</a>
                                 </li>
-                             <!--   <li class="paginate_button page-item ">
+                                <li class="paginate_button page-item ">
                                     <a href="#" aria-controls="example1" data-dt-idx="4" tabindex="0" class="page-link">4</a>
                                 </li><li class="paginate_button page-item ">
                                     <a href="#" aria-controls="example1" data-dt-idx="5" tabindex="0" class="page-link">5</a>
                                 </li>
-                                <li class="paginate_button page-item ">
-                                    <a href="#" aria-controls="example1" data-dt-idx="6" tabindex="0" class="page-link">6</a>
-                                </li>  -->
+                                
                                 <li class="paginate_button page-item next" id="example1_next">
                                     <a href="#" aria-controls="example1" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
                                 </li>
@@ -282,6 +206,84 @@
               </div>
               <!-- /.card-body -->
             </div>
+
+
+        </div><!-- /.container-fluid -->
+    </section> <!-- /.content -->
+</div>
+
+@endsection
+
+
+
+
+
+
+
+<!--
+<form name="form1" id="form1" action="/action_page.php">
+    <div class="row">
+                    <div class="col-sm-12">
+                        <table id="example1" >
+                  <thead>
+                  <tr>
+                      <th class="dateclass" tabindex="0" aria-controls="example1" rowspan="1" colspan="2" >Date </Label>
+                          <select name="date" id="datevalue">
+                         <option value="" selected="selected">  </option>
+                          </select>
+                      </th> 
+                      <th class="dateclassmonth" tabindex="2" aria-controls="example2" rowspan="1" colspan="5" > Month 
+                       <select name="month" id="monthvalue">
+                         <option value="" selected="selected">  </option>
+                        </select> 
+                      </th>
+                      <th class="year" tabindex="0" aria-controls="example3" rowspan="1" colspan="8" >Year 
+                      <select name="chapter" id="chapter">
+                        <option value="" selected="selected">  </option>
+                      </select>
+                      </th>
+                  
+                  </tr>  
+                  </thead>
+         </table> 
+</form><br><br>
+-->
+
+
+<!--------------------------------------------------------------------->
+
+
+<!--
+    <div class="card-header">
+                <h3 class="card-title">Monthlyreport</h3>
+
+                <div class="card-tools">
+                  <div class="input-group input-group-sm" style="width: 150px;">
+                    <input disabled type="text" name="table_search" class="form-control float-right" placeholder="Employee_ID">
+
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-default">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+-->
+<!---------------------------------------------------------->
+<!---------------------------------------------------------->                    
+<!--  
+    <tfoot>
+        <tr>
+            <th rowspan="1" colspan="1">Rendering engine</th>
+            <th rowspan="1" colspan="1">Browser</th>
+            <th rowspan="1" colspan="1">Platform(s)</th>
+            <th rowspan="1" colspan="1">Engine version</th>
+            <th rowspan="1" colspan="1" style="">CSS grade</th>
+        </tr>
+    </tfoot>
+     -->
+<!---------------------------------------------------------->
 
 <!---------------------------------------------------------->
 <!--
@@ -325,8 +327,13 @@
 
 -->             
 <!---------------------------------------------------------->
-        </div><!-- /.container-fluid -->
-    </section> <!-- /.content -->
-</div>
+                      
 
-@endsection
+<!-- original--><!--
+                      <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" >Employee_ID</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">DepartmentID</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Department Name</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Date</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Status</th>
+
+-->

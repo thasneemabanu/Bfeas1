@@ -11,11 +11,11 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/home"><b>Home</b></a></li>
                         
 
 
-                        <li class="breadcrumb-item active">Profile</li>
+                        <li class="breadcrumb-item active"><b>Profile</b></li>
                     </ol>
                 </div>
             </div>
@@ -76,11 +76,14 @@
                                     <b>Phone</b> <a class="float-right">{{$user->phone}}</a>
                                 </li>
                                 <li class="list-group-item">
+                                    <b>Joined Date</b> <a class="float-right">{{$user->employed_from_date}}</a>
+                                </li>
+                                <li class="list-group-item">
                                     <b>Email</b> <a class="float-right">{{$user->email}}</a>
                                 </li>
                                 <li class="list-group-item p-1">
 
-                                    <b>Signature</b> <a class="float-right">
+                                <b>Signature</b><a class="float-right">
                                         <div class="d-none">
                                             <form id="-user-sign-form" action="/profile/updatesign" method="post" enctype="multipart/form-data">
                                                 @csrf

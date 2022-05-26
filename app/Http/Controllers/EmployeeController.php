@@ -23,7 +23,7 @@ class EmployeeController extends Controller
 
     public function reportsemployee(){   //userdefined function //
         $data = [];
-        return view('cms.sub_forms.reports_employee')->with($data);
+        return view('cms.sub_forms.attendance_reports_employee')->with($data);
     }
 }
 

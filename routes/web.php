@@ -47,13 +47,19 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/admin', 'AdminController@index')->name('Admin Panel');                                //..done
 
     // Admin Panel employee management
- Route::get('/adminformone', 'AdminController@empmanagementadmin')->name('Admin Panel emp management');               //..done
+ Route::get('/adminformone', 'AdminController@empmanagementadmin')->name('Admin Panel emp management view employees');               //..done
+
+  // Admin Panel add employee
+  Route::get('/addemployee', 'AdminController@addemployeeadmin')->name('Admin Panel add employee');
+
+// Admin Panel edit employee
+Route::get('/editemployee', 'AdminController@editemployeeadmin')->name('Admin Panel edit employee');
 
    // Admin Panel Leave management
  Route::get('/adminformtwo', 'AdminController@leavemanagementadmin')->name('Admin Panel leave management');             //..done
 
-    // Admin Panel report management
- Route::get('/adminformthree', 'AdminController@reportmanagementadmin')->name('Admin Panel report management');          //..done
+    // Admin Panel attendance report management
+ Route::get('/adminformthree', 'AdminController@reportmanagementadmin')->name('Admin Panel attendance management');          //..done
 
 
 
@@ -78,12 +84,8 @@ Route::group(['middleware' => ['auth']], function () {
  Route::get('/supervisorformone', 'SupervisorController@superleave')->name('supervisor Panel leave management');     //...done
 
 
-    
-   Route::get('/leave/request/request', 'LeaveController@request_leave')->name('');                              
+   //leave request 
+   Route::post('/leave/request/request', 'LeaveController@request_leave')->name('');                              
  
-   // Attendance
-   // Route::get('/', 'Controller@')->name('');                              
-  
-
 });
 

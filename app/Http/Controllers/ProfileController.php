@@ -79,6 +79,8 @@ class ProfileController extends Controller{
         Session::flash('success','User Profile Updated');
         return Redirect::back();
     }
+    
+    
 
     public function updatepassword(Request $request){
         $request->validate([

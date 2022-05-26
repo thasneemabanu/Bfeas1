@@ -11,15 +11,28 @@
                      </div>    
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="/employee">Home</a></li>
-                        <li class="breadcrumb-item"><a href="/employeeformone">Leaves</a></li>
+                    <li class="breadcrumb-item"><a href="/employee"><b>Home</b></a></li>
+                        <li class="breadcrumb-item"><a href="/employeeformone"><b>Leaves</b></a></li>
                         <li class="breadcrumb-item active"><b>Employee-control-panel<b></li>
                     </ol>
                 </div>
-            </div>
-<!---------------------------------------------------------->
+</div>
+<!--adding month picker -->
+<div class="form-group">
+                  <label>Date range:</label>
 
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="far fa-calendar-alt"></i>
+                      </span>
+                    </div>
+                    <input type="month" class="form-control float-right" id="reservation">
+                  </div>
+                  <!-- /.input group -->
+                </div>
 
+ <!--adding drop down buttons picker -->  <!--             
 <div class="dropdown">
   <button type="button" class="btn btn-secondary dropdown-toggle " data-bs-toggle="dropdown">
     Month &nbsp;&nbsp;
@@ -40,8 +53,8 @@
     <li><a class="dropdown-item" href="#">Link 3</a></li>
   </ul> 
 </div> 
-<br>
-<!---------------------------------------------------------->
+<br>-->
+<!--end of drop down buttons picker -->  
 
         </div><!-- /.container-fluid -->
     </section>
@@ -71,33 +84,14 @@
 
 <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Monthly reports </h3>
+                <h3 class="card-title">Monthly Attendance report </h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4"><div class="row">
-                   <!-- <div class="col-sm-12 col-md-6"><div class="dt-buttons btn-group flex-wrap">
-                         <button class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="example1" type="button">
-                            <span>Copy</span></button> 
-                            <button class="btn btn-secondary buttons-csv buttons-html5" tabindex="0" aria-controls="example1" type="button">
-                                <span>CSV</span></button> 
-                                <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="example1" type="button">
-                                    <span>Excel</span>
-                                </button> <button class="btn btn-secondary buttons-pdf buttons-html5" tabindex="0" aria-controls="example1" type="button">
-                                    <span>PDF</span></button> <button class="btn btn-secondary buttons-print" tabindex="0" aria-controls="example1" type="button">
-                                        <span>Print</span></button> 
-                                        <div class="btn-group">
-                                            <button class="btn btn-secondary buttons-collection dropdown-toggle buttons-colvis" tabindex="0" aria-controls="example1" type="button" aria-haspopup="true">
-                                                <span>Column visibility</span><span class="dt-down-arrow"></span></button>
-                                            </div> 
-                                        </div>
-                                    </div>   -->
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div id="example1_filter" class="dataTables_filter">
-                                                    <label>Search employee ID<input disabled type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1"></label>
-                                                </div>
-                                            </div>
-                                        </div>
+                  
+                </div>
+              </div>
                 <div class="row">
                     <div class="col-sm-12">
                         <table id="example1" class="table table-bordered table-striped dataTable dtr-inline" aria-describedby="example1_info">
@@ -105,10 +99,13 @@
                   <tr>
                       <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" >Employee_ID</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >DepartmentID</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Department Name</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Date</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Status</th>
-                      
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Attendance Status</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Check in time</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Check out time</th>
+                      </tr>  
+                  </thead>
+                  <tbody>
+
 
 <!-- original--><!--
                       <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" >Employee_ID</th>
@@ -117,12 +114,10 @@
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Date</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Status</th>
 
--->
-                  </tr>  
-                  </thead>
-                  <tbody>
+                       -->               
+                     
 <!---------------------------------------------------------->
-                  
+                   
                   <tr class="odd">
                     <td class="dtr-control sorting_1" tabindex="0"></td>
                     <td></td>
@@ -190,8 +185,8 @@
                     <td></td>
                     <td style=""></td>
                   </tr></tbody>
-<!---------------------------------------------------------->                    
-<!--  
+                 
+<!--  begining of the column footer codes
     <tfoot>
         <tr>
             <th rowspan="1" colspan="1">Rendering engine</th>
@@ -201,8 +196,8 @@
             <th rowspan="1" colspan="1" style="">CSS grade</th>
         </tr>
     </tfoot>
-     -->
-<!---------------------------------------------------------->
+     ending of column footer codes -->
+
                 </table>
             </div>
         </div>
@@ -227,27 +222,32 @@
                                 <li class="paginate_button page-item ">
                                     <a href="#" aria-controls="example1" data-dt-idx="3" tabindex="0" class="page-link">3</a>
                                 </li>
-                         <!--   <li class="paginate_button page-item ">
-                                    <a href="#" aria-controls="example1" data-dt-idx="3" tabindex="0" class="page-link">3</a>
-                                </li>
                                 <li class="paginate_button page-item ">
                                     <a href="#" aria-controls="example1" data-dt-idx="4" tabindex="0" class="page-link">4</a>
                                 </li><li class="paginate_button page-item ">
                                     <a href="#" aria-controls="example1" data-dt-idx="5" tabindex="0" class="page-link">5</a>
                                 </li>
-                                <li class="paginate_button page-item ">
-                                    <a href="#" aria-controls="example1" data-dt-idx="6" tabindex="0" class="page-link">6</a>
-                                </li>  -->
+                                
                                 <li class="paginate_button page-item next" id="example1_next">
                                     <a href="#" aria-controls="example1" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
                                 </li>
                             </ul>
                         </div></div></div></div>
-              </div>
-              <!-- /.card-body -->
+              </div> <!-- /end of card-body -->
+             
+                      <button class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="example1" type="button">
+                            <span> Print </span></button> <br><br>
             </div>
-
 <!---------------------------------------------------------->
+        </div><!-- /.container-fluid -->
+    </section> <!-- /.content -->
+</div>
+
+@endsection
+
+
+
+
 <!--
 
 <div class="card-body table-responsive p-0" style="height: 300px;">
@@ -288,9 +288,26 @@
               </div>
 
 -->             
-<!---------------------------------------------------------->
-        </div><!-- /.container-fluid -->
-    </section> <!-- /.content -->
-</div>
 
-@endsection
+
+
+ <!-- <div class="col-sm-12 col-md-6"><div class="dt-buttons btn-group flex-wrap">
+                         <button class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="example1" type="button">
+                            <span>Copy</span></button> 
+                            <button class="btn btn-secondary buttons-csv buttons-html5" tabindex="0" aria-controls="example1" type="button">
+                                <span>CSV</span></button> 
+                                <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="example1" type="button">
+                                    <span>Excel</span>
+                                </button> <button class="btn btn-secondary buttons-pdf buttons-html5" tabindex="0" aria-controls="example1" type="button">
+                                    <span>PDF</span></button> <button class="btn btn-secondary buttons-print" tabindex="0" aria-controls="example1" type="button">
+                                        <span>Print</span></button> 
+                                        <div class="btn-group">
+                                            <button class="btn btn-secondary buttons-collection dropdown-toggle buttons-colvis" tabindex="0" aria-controls="example1" type="button" aria-haspopup="true">
+                                                <span>Column visibility</span><span class="dt-down-arrow"></span></button>
+                                            </div> 
+                                        </div>
+                                    </div>   -->
+                                              <!-- <div class="col-sm-12 col-md-6">
+                                                    <div id="example1_filter" class="dataTables_filter">
+                                                    <label>Search employee ID<input disabled type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1"></label>
+                                                </div> -->
