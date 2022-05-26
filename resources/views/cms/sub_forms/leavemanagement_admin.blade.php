@@ -23,7 +23,17 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-        <form action="/action_page.php">
+        <form action="/leave/request/request" method="POST">
+          @csrf
+        <div class="mb-3 mt-3">
+                 <label for="comment">Leave Type</label>
+                 <select class="form-select" name="leave_type" id="leave_type" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="medical">Medical</option>
+                  <option value="vacation">Vacation</option>
+                  <option value="maternity">Maternity</option>
+                </select>
+          </div>
                  <div class="mb-3 mt-3">
                    <label for="comment">Reasons for the leave</label>
                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
