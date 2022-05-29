@@ -16,8 +16,8 @@
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="/admin"><b>Home</b></a></li>
                         <li class="breadcrumb-item"><a href="/adminformtwo"><b>Leaves</b> </a></li>
-                        <li class="breadcrumb-item"><a href="/adminformthree"><b>Attendance Report</b> </a></li>
-                        <li class="breadcrumb-item"><a href="/adminformone"><b>Employee Management</b></a></li>
+                        <li class="breadcrumb-item"><a href="/adminformthree"><b>Attendance-Report</b> </a></li>
+                        <li class="breadcrumb-item"><a href="/adminformone"><b>Employee-Management</b></a></li>
                         <li class="breadcrumb-item active"><b>Admin control Panel</b></li>
                     </ol>
                 </div>

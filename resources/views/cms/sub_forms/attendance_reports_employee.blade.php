@@ -7,19 +7,20 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1></h1>
+                    <h1> <p>Employee Attendance Report</p></h1>
                      </div>    
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
+                     
                     <li class="breadcrumb-item"><a href="/employee"><b>Home</b></a></li>
-                        <li class="breadcrumb-item"><a href="/employeeformone"><b>Leaves</b></a></li>
+                        <li class="breadcrumb-item"><a href="/employeeformthree"><b>Total-Leaves-Taken-sheet</b></a></li>
                         <li class="breadcrumb-item active"><b>Employee-control-panel<b></li>
                     </ol>
                 </div>
 </div>
 <!--adding month picker -->
 <div class="form-group">
-                  <label>Date range:</label>
+                  <label>Select a Month</label>
 
                   <div class="input-group">
                     <div class="input-group-prepend">
@@ -53,17 +54,9 @@
     <li><a class="dropdown-item" href="#">Link 3</a></li>
   </ul> 
 </div> 
-<br>-->
-<!--end of drop down buttons picker -->  
-
-        </div><!-- /.container-fluid -->
-    </section>
-<!---------------------------------------------------------->
-    <!-- Main content -->
-    <section class="content">
-        <div class="container-fluid">       
-<!--------------------------------------------------------------------->
-<!--
+<br>--><!--end of drop down buttons picker -->  
+      
+<!--codes tried with other UI components
     <div class="card-header">
                 <h3 class="card-title">Monthlyreport</h3>
 
@@ -78,11 +71,16 @@
                     </div>
                   </div>
                 </div>
-              </div>
--->
-<!---------------------------------------------------------->
+              </div>-->
 
-<div class="card">
+    
+            </div><!--End of container-fluid -->
+    </section>
+    
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+   <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Monthly Attendance report </h3>
               </div>
@@ -93,12 +91,12 @@
                 </div>
               </div>
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12"> 
                         <table id="example1" class="table table-bordered table-striped dataTable dtr-inline" aria-describedby="example1_info">
                   <thead>
                   <tr>
-                      <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" >Employee_ID</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >DepartmentID</th>
+                      <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" >Date</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Employee ID</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Attendance Status</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Check in time</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Check out time</th>
@@ -116,7 +114,7 @@
 
                        -->               
                      
-<!---------------------------------------------------------->
+
                    
                   <tr class="odd">
                     <td class="dtr-control sorting_1" tabindex="0"></td>

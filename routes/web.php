@@ -49,17 +49,16 @@ Route::group(['middleware' => ['auth']], function () {
     // Admin Panel employee management
  Route::get('/adminformone', 'AdminController@empmanagementadmin')->name('Admin Panel emp management view employees');               //..done
 
-  // Admin Panel add employee
-  Route::get('/addemployee', 'AdminController@addemployeeadmin')->name('Admin Panel add employee');
-
-// Admin Panel edit employee
-Route::get('/editemployee', 'AdminController@editemployeeadmin')->name('Admin Panel edit employee');
-
    // Admin Panel Leave management
  Route::get('/adminformtwo', 'AdminController@leavemanagementadmin')->name('Admin Panel leave management');             //..done
 
     // Admin Panel attendance report management
  Route::get('/adminformthree', 'AdminController@reportmanagementadmin')->name('Admin Panel attendance management');          //..done
+// Admin Panel add employee
+Route::get('/addemployee', 'AdminController@addemployeeadmin')->name('Admin Panel add employee');
+
+// Admin Panel edit employee
+Route::get('/editemployee', 'AdminController@editemployeeadmin')->name('Admin Panel edit employee');
 
 
 
@@ -78,14 +77,23 @@ Route::get('/editemployee', 'AdminController@editemployeeadmin')->name('Admin Pa
    //Employee panal form 2
  Route::get('/employeeformtwo', 'EmployeeController@reportsemployee')->name('Employee Panel report management');        //..done 
 
+// Employee Panal total leaves
+   Route::get('/employeeformthree', 'EmployeeController@totalleavesemployee')->name('employee panel total leaves');              
+//admin panel leave taken details 
+Route::get('/total_leaves_taken', 'LeaveController@total_leave')->name('admin panel taken leaves details ');
+
+
+
+
   // supervisor Panel
  Route::get('/supervisor', 'SupervisorController@super')->name('supervisor Panel');                                   //...done   
   //supervisor form1
  Route::get('/supervisorformone', 'SupervisorController@superleave')->name('supervisor Panel leave management');     //...done
 
-
    //leave request 
-   Route::post('/leave/request/request', 'LeaveController@request_leave')->name('');                              
+   Route::post('/leave/request/request', 'LeaveController@request_leave')->name('');                //done                
  
+
+   
 });
 

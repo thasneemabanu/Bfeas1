@@ -7,23 +7,31 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                   <!-- <h1>Attendance Report</h1>   -->
-                   
+                   <!-- <h1>Attendance Report</h1>   -->            
                 </div>
                 <div class="col-sm-6 ">
                     <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="/admin"><b>Home</b></a></li>
-                    <li class="breadcrumb-item active"><b>Admin-Control-Panel</b></li> 
-                    
-                    <!-- report generating options -->
-
+                    <li class="breadcrumb-item"><a href="/total_leaves_taken"><b>Total-Leaves-Taken-sheet</b></a></li>
+                    <li class="breadcrumb-item active"><b>Admin-Control-Panel</b></li>              
                     </ol>
                 </div>
             </div>
 
-<!---------------------------------------------------------->
+            <div class="form-group">
+                  <label>Select a Month</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="far fa-calendar-alt"></i>
+                      </span>
+                    </div>
+                    <input type="month" class="form-control float-right" id="reservation">
+                  </div><!-- /.input group -->
+                </div>
 
-
+<!--drop down buttons for month and year---->
+<!--
 <div class="dropdown">
   <button type="button" class="btn btn-secondary dropdown-toggle " data-bs-toggle="dropdown">
     Month &nbsp;&nbsp;
@@ -43,18 +51,15 @@
     <li><a class="dropdown-item" href="#">Link 2</a></li>
     <li><a class="dropdown-item" href="#">Link 3</a></li> 
   </ul> 
-</div> 
-<br>
-<!---------------------------------------------------------->
+</div> -->
+
+        <!--drop down button ends---->
         </div><!-- /.container-fluid -->
     </section>
-<!---------------------------------------------------------->
+
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-          
-<!---------------------------------------------------------->
-
 <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Monthly Attendance report </h3>
@@ -89,16 +94,15 @@
                         <table id="example1" class="table table-bordered table-striped dataTable dtr-inline" aria-describedby="example1_info">
                   <thead>
                   <tr>
-                      <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" >Employee_ID</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >DepartmentID</th>
+                      <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" >Date</th>
+                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Employee_ID</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Attendance Status</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Check in time</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" >Check out time</th>
-
                   </tr> 
                   </thead>
                   <tbody>
-<!---------------------------------------------------------->
+<!--Table body starts -->
                   
                   <tr class="odd">
                     <td class="dtr-control sorting_1" tabindex="0"></td>
@@ -206,7 +210,8 @@
               </div>
               <!-- /.card-body -->
             </div>
-
+            <button class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="example1" type="button">
+                            <span> Print </span></button> <br><br>
 
         </div><!-- /.container-fluid -->
     </section> <!-- /.content -->
@@ -220,7 +225,7 @@
 
 
 
-<!--
+<!--certain changed item codes 
 <form name="form1" id="form1" action="/action_page.php">
     <div class="row">
                     <div class="col-sm-12">
@@ -248,11 +253,7 @@
          </table> 
 </form><br><br>
 -->
-
-
-<!--------------------------------------------------------------------->
-
-
+<!--codes tried with other UI components -->
 <!--
     <div class="card-header">
                 <h3 class="card-title">Monthlyreport</h3>
@@ -270,8 +271,8 @@
                 </div>
               </div>
 -->
-<!---------------------------------------------------------->
-<!---------------------------------------------------------->                    
+<!--codes tried with other UI components -->
+<!--codes tried with other UI components -->                    
 <!--  
     <tfoot>
         <tr>
@@ -283,11 +284,10 @@
         </tr>
     </tfoot>
      -->
-<!---------------------------------------------------------->
+<!--codes tried with other UI components -->
 
-<!---------------------------------------------------------->
+<!--codes tried with other UI components -->
 <!--
-
 <div class="card-body table-responsive p-0" style="height: 300px;">
                 <table class="table table-head-fixed text-nowrap">
                   <thead>
@@ -326,10 +326,8 @@
               </div>
 
 -->             
-<!---------------------------------------------------------->
-                      
-
-<!-- original--><!--
+<!--codes tried with other UI components -->
+<!--codes tried with other UI components --><!--
                       <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" >Employee_ID</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">DepartmentID</th>
                       <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Department Name</th>

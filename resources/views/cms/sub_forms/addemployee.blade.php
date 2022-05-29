@@ -7,15 +7,13 @@
 <!--flex items below nevigation --> 
 <!--<div class="d-flex p-1 bg-secondary text-white">-->
 
-
-
 <div class="content-wrapper" style="min-height: 2646.44px;">
      <!--Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Add employee details- admin</h1>
+                    <h1>Add employee details </h1>
                 </div>
 
                 <div class="col-sm-6">
@@ -24,7 +22,6 @@
                         
                         <li class="breadcrumb-item active">Admin-control-Panel</li> 
                     </ol>
-
 <!--
            <div class="input-group" data-widget="sidebar-search">
                 <input class="form-control form-control-sidebar" type="search" placeholder="Search Employee ID" aria-label="Search">
@@ -36,7 +33,6 @@
         </div>
 -->
                 </div>
-
             </div>
         </div><!-- /.container-fluid -->
     </section>
@@ -108,12 +104,8 @@
       <input type="date" class="form-control" style="margin-top:5px!important" id="employedfromdate" placeholder="Enter email" name="employedfrom">
       <!--<div class="form-text">Must be a valid email address.</div>-->
     </div> 
-    <button type="button" class="btn btn-primary mb-3">Add</button>
-      
+    <button type="button" class="btn btn-primary mb-3">Add</button>     
 </div>
-
-
-
         </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->

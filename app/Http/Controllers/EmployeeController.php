@@ -25,5 +25,12 @@ class EmployeeController extends Controller
         $data = [];
         return view('cms.sub_forms.attendance_reports_employee')->with($data);
     }
+
+    public function totalleavesemployee(){    //total leaves taken by employee-panel
+        $data = [];
+        return view('cms.sub_forms.total_leaves_taken_emppanel')->with($data);
+    }
+
+  
 }
 

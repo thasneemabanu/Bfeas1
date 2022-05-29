@@ -7,12 +7,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Admin-Leaves </h1>
+                    <h1>Admin-Leaves Management </h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="/admin"><b>Home</b></a></li>
-                        <li class="breadcrumb-item"><a href="/adminformthree"><b>Reports </b></a></li>
+                        <li class="breadcrumb-item"><a href="/adminformthree"><b>Attendance & Reports </b></a></li>
                         <li class="breadcrumb-item active"><b>Admin-control-panel</b></li>   
                     </ol>
                 </div>
@@ -28,29 +28,30 @@
         <div class="mb-3 mt-3">
                  <label for="comment">Leave Type</label>
                  <select class="form-select" name="leave_type" id="leave_type" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
+                 <option selected>Open this select menu to choose leave type </option>
+                  <option value="maternity">Annual </option>
+                  <option value="maternity">Casual</option>
+                  <option value="maternity">Compensatory Off</option>
+                  <option value="maternity">Marriage</option>
+                  <option value="maternity">Bereavement Leave.</option>
                   <option value="medical">Medical</option>
                   <option value="vacation">Vacation</option>
                   <option value="maternity">Maternity</option>
+                  <option value="maternity">Paternity Leave</option>
                 </select>
           </div>
-                 <div class="mb-3 mt-3">
-                   <label for="comment">Reasons for the leave</label>
-                   <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-                 </div>
-                 <div class="form-floating mb-3 mt-3">
-      <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
-      <label for="email">Employee ID</label>
-    </div>
-    <div class="form-floating mt-3 mb-3">
-      <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-      <label for="pwd">DepartmentID</label>
-    </div>
-    <div class="form-floating mt-3 mb-3">
-      <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-      <label for="pwd">Number_Of_Days</label>
-    </div>
-
+          <div class="mb-3 mt-3">
+                 <label for="comment">Reasons for the leave</label>
+                 <textarea class="form-control" rows="5" id="comment" name="reason"></textarea>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+              <input type="date" class="form-control" id="from_date" name="from_date" max="" min="">
+              <label for="from_date">Leave from</label>
+          </div>
+          <div class="form-floating mt-3 mb-3">
+              <input type="date" class="form-control" id="to_date"  name="to_date">
+              <label for="to_date">Leave To</label>
+          </div>
                    <button type="submit" class="btn btn-primary">Request to Supervisor</button>
                    <button type="submit" class="btn btn-secondary">Cancel</button> <br><br><br>
 

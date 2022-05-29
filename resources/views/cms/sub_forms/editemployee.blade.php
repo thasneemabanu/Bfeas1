@@ -109,7 +109,7 @@
       <!--<div class="form-text">Must be a valid email address.</div>-->
     </div> 
     
-    <button type="button" class="btn btn-primary mb-3">Add Employee</button>
+    <button type="button" class="btn btn-outline-primary mb-3">Add Employee</button>
     <button type="button" class="btn btn-primary mb-3">Edit Employee</button>
     
     

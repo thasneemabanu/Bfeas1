@@ -49,4 +49,12 @@ class LeaveController extends Controller
          return Redirect::back();
 
     }       //end of function request_leave
+
+//total leaves taken page controller 
+    public function total_leave(){
+        $data = [];
+        return view('cms.sub_forms.total_leaves_taken')->with($data);
+    }
+
+
 }

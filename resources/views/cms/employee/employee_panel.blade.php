@@ -13,8 +13,8 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="/employee"><b>Home</b></a></li>
-                        <li class="breadcrumb-item"><a href="/employeeformone"><b>Leaves</b></a></li>
-                        <li class="breadcrumb-item"><a href="/employeeformtwo"><b>Attendance</b></a></li>
+                        <li class="breadcrumb-item"><a href="/employeeformone"><b>LeavesManagement</b></a></li>
+                        <li class="breadcrumb-item"><a href="/employeeformtwo"><b>Attendance and Reports</b></a></li>
                         <li class="breadcrumb-item active"><b>Employee-Control-Panel</b></li>
                     </ol>
                 </div>
