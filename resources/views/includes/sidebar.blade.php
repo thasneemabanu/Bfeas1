@@ -357,23 +357,21 @@
           </a>
         </li>
 -->
-
-
-        
+      
         <li class="nav-item">
-          <a href="/employee" class="nav-link" >
-          <i class="fa fa-male" >&nbsp&nbsp</i>
+          <a href="/adminpanel" class="nav-link" >
+          <i class="fa fa-lock" >&nbsp</i>
             <p>
-             Employee
+            Admin
             </p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="/admin" class="nav-link" >
-          <i class="fa fa-lock" >&nbsp</i>
+          <a href="/employee" class="nav-link" >
+          <i class="fa fa-male" >&nbsp&nbsp</i>
             <p>
-            Admin
+             Employee
             </p>
           </a>
         </li>

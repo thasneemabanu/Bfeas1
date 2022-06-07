@@ -8,13 +8,13 @@
             <div class="row mb-2">
             
                  <div class="col-sm-6">
-                    <h1>Welcome To Employee Panel</h1>
+                    <h1>Welcome to Employee-Panel</h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="/employee"><b>Home</b></a></li>
-                        <li class="breadcrumb-item"><a href="/employeeformone"><b>LeavesManagement</b></a></li>
-                        <li class="breadcrumb-item"><a href="/employeeformtwo"><b>Attendance and Reports</b></a></li>
+                        <li class="breadcrumb-item"><a href="/employeeleaverequest"><b>Leaves-Requesting</b></a></li>
+                        <li class="breadcrumb-item"><a href="/employeeviewreport"><b>Attendance/Reports</b></a></li>
                         <li class="breadcrumb-item active"><b>Employee-Control-Panel</b></li>
                     </ol>
                 </div>

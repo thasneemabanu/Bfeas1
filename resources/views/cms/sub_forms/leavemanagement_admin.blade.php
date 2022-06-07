@@ -11,8 +11,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/admin"><b>Home</b></a></li>
-                        <li class="breadcrumb-item"><a href="/adminformthree"><b>Attendance & Reports </b></a></li>
+                        <li class="breadcrumb-item"><a href="/adminpanel"><b>Home</b></a></li>
                         <li class="breadcrumb-item active"><b>Admin-control-panel</b></li>   
                     </ol>
                 </div>
@@ -54,12 +53,13 @@
           </div>
                    <button type="submit" class="btn btn-primary">Request to Supervisor</button>
                    <button type="submit" class="btn btn-secondary">Cancel</button> <br><br><br>
-
+                   <button type="button" class="btn btn-info"><a href="/adminpanel">Go back</a></button>
+                    
                    <div class="mb-3 mt-3">
                    <label for="comment">Supervisor Approval</label>
                    <textarea disabled class="form-control" rows="5" id="comment" name="text"></textarea>
                  </div>              
- <div class="form-floating mb-3 mt-3">           
+  <div class="form-floating mb-3 mt-3">           
    <div class="input-group mb-3">
        <div class="input-group-text">
      <input disabled type="radio">
@@ -100,7 +100,6 @@
         </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-
 </div>
 
 @endsection

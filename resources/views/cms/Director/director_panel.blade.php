@@ -14,7 +14,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="/director"><b>Home</b></a></li>
-                        <li class="breadcrumb-item"><a href="/directorformone"><b>LeaveApprovals</b></a></li>
+                        <li class="breadcrumb-item"><a href="/directorleavepermision"><b>LeaveApprovals</b></a></li>
                         <li class="breadcrumb-item active"><b>Director-Control-Panel</b></li>
                     </ol>
                 </div>

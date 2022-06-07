@@ -20,7 +20,7 @@
 
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                   <li class="breadcrumb-item"><a href="/admin"> <b>Home</b></a></li>
+                   <li class="breadcrumb-item"><a href="/adminmanageemployee"> <b>Employee-management</b></a></li>
                         
                         <li class="breadcrumb-item active"><b>Admin-control-Panel</b></li> 
                     </ol>
@@ -109,14 +109,12 @@
       <!--<div class="form-text">Must be a valid email address.</div>-->
     </div> 
     
-    <button type="button" class="btn btn-outline-primary mb-3">Add Employee</button>
-    <button type="button" class="btn btn-primary mb-3">Edit Employee</button>
+    <button type="button" class="btn btn-outline-primary mb-3">Save</a></button>
     
-    
+    <br>
+      <button type="button" class="btn btn-outline-primary btn-block"><a href="/adminpanel"> Go back to panel</a></button></button>
+                            
 </div>
-
-
-
         </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->

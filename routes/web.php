@@ -44,56 +44,50 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/user/activateuser', 'UserController@activateUser');
 
     // Admin Panel
-    Route::get('/admin', 'AdminController@index')->name('Admin Panel');                                //..done
+    Route::get('/adminpanel', 'AdminController@index')->name('Admin Panel');                                //..done
 
-    // Admin Panel employee management
- Route::get('/adminformone', 'AdminController@empmanagementadmin')->name('Admin Panel emp management view employees');               //..done
+    // Admin Panel manage-employees (Adding and editing)
+    Route::get('/adminmanageemployee', 'AdminController@empmanagementadmin')->name('Admin Panel emp management view employees');               //..done
 
-   // Admin Panel Leave management
- Route::get('/adminformtwo', 'AdminController@leavemanagementadmin')->name('Admin Panel leave management');             //..done
+    // Admin Panel Leave-request
+    Route::get('/adminleave', 'AdminController@leavemanagementadmin')->name('Admin Panel leave management');             //..done
 
     // Admin Panel attendance report management
- Route::get('/adminformthree', 'AdminController@reportmanagementadmin')->name('Admin Panel attendance management');          //..done
-// Admin Panel add employee
-Route::get('/addemployee', 'AdminController@addemployeeadmin')->name('Admin Panel add employee');
+    Route::get('/adminattendancereport', 'AttendanceController@reportmanagementadmin')->name('Admin Panel attendance management');  
+         
+    // Admin Panel add employee
+    Route::get('/adminaddemployee', 'AdminController@addemployeeadmin')->name('Admin Panel add employee');
 
-// Admin Panel edit employee
-Route::get('/editemployee', 'AdminController@editemployeeadmin')->name('Admin Panel edit employee');
+    // Admin Panel edit employee
+    Route::get('/admineditemployee', 'AdminController@editemployeeadmin')->name('Admin Panel edit employee');
 
 
 
 
-    // Director Panel
- Route::get('/director', 'DirectorController@leavepermision')->name('Director Panel');                                  //..done
+    // Director Panel home
+    Route::get('/director', 'DirectorController@directorhome')->name('Director Panel');                                  //..done
+    // Director Panel leave permisions
+    Route::get('/directorleavepermision', 'DirectorController@directorpermision')->name('Director Panel leave management');          //..done
+
  
-   // Director Panel form 1
- Route::get('/directorformone', 'DirectorController@leavemanagement')->name('Director Panel leave management');          //..done
-
- 
-   // Employee Panal
- Route::get('/employee', 'EmployeeController@emppanel')->name('Employee Panel');                                        //..done
-   // employee Panel form 1
- Route::get('/employeeformone', 'EmployeeController@leavemanagementemployee')->name('Employee Panel leave management'); //..done
-   //Employee panal form 2
- Route::get('/employeeformtwo', 'EmployeeController@reportsemployee')->name('Employee Panel report management');        //..done 
-
-// Employee Panal total leaves
-   Route::get('/employeeformthree', 'EmployeeController@totalleavesemployee')->name('employee panel total leaves');              
-//admin panel leave taken details 
-Route::get('/total_leaves_taken', 'LeaveController@total_leave')->name('admin panel taken leaves details ');
+    // Employee Panal home
+    Route::get('/employee', 'EmployeeController@emppanel')->name('Employee Panel');                                        //..done
+    // employee Panel form 1
+    Route::get('/employeeleaverequest', 'EmployeeController@leavemanagementemployee')->name('Employee Panel leave management'); //..done
+    //Employee panal form 2
+    Route::get('/employeeviewreport', 'EmployeeController@reportsemployee')->name('Employee Panel report management');        //..done 
 
 
+    // supervisor Panel
+    Route::get('/supervisor', 'SupervisorController@super')->name('supervisor Panel');                                   //...done   
+    //supervisor form1
+    Route::get('/supervisorleavepermision', 'SupervisorController@superleave')->name('supervisor Panel leave management');     //...done
 
-
-  // supervisor Panel
- Route::get('/supervisor', 'SupervisorController@super')->name('supervisor Panel');                                   //...done   
-  //supervisor form1
- Route::get('/supervisorformone', 'SupervisorController@superleave')->name('supervisor Panel leave management');     //...done
-
-   //leave request 
-   Route::post('/leave/request/request', 'LeaveController@request_leave')->name('');                //done                
- 
-
+    //leave request 
+    Route::post('/leave/request/request', 'LeaveController@request_leave')->name('');                //done                
+    //new leaves count page
+    Route::get('/count', 'LeaveController@leavescount')->name('Leaves Count page');  
+            
    
 });
 

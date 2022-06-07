@@ -18,9 +18,8 @@
 
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                   <li class="breadcrumb-item"><a href="/admin"> <b>Home</b></a></li>
-                        
-                        <li class="breadcrumb-item active">Admin-control-Panel</li> 
+                   <li class="breadcrumb-item"><a href="/adminmanageemployee"> <b>Employee-management</b></a></li>                
+                  <li class="breadcrumb-item active">Admin-control-Panel</li> 
                     </ol>
 <!--
            <div class="input-group" data-widget="sidebar-search">
@@ -105,6 +104,7 @@
       <!--<div class="form-text">Must be a valid email address.</div>-->
     </div> 
     <button type="button" class="btn btn-primary mb-3">Add</button>     
+    <button type="button" class="btn btn-outline-primary mb-3"><a href="/admineditemployee"> Edit</a></button>
 </div>
         </div><!-- /.container-fluid -->
     </section>

@@ -6,10 +6,11 @@ use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
 {
+    /*
     public function index(){
         $data = [];
         return view('cms.admin.admin_panel')->with($data);
-    }
+    }*/
  
     public function emppanel(){
         $data = [];
@@ -26,11 +27,7 @@ class EmployeeController extends Controller
         return view('cms.sub_forms.attendance_reports_employee')->with($data);
     }
 
-    public function totalleavesemployee(){    //total leaves taken by employee-panel
-        $data = [];
-        return view('cms.sub_forms.total_leaves_taken_emppanel')->with($data);
-    }
-
+   
   
 }
 

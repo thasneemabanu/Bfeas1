@@ -11,8 +11,8 @@
                 </div>
                 <div class="col-sm-6 ">
                     <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="/admin"><b>Home</b></a></li>
-                    <li class="breadcrumb-item"><a href="/total_leaves_taken"><b>Total-Leaves-Taken-sheet</b></a></li>
+                    <li class="breadcrumb-item"><a href="/adminpanel"><b>Home</b></a></li>
+                    <li class="breadcrumb-item"><a href="/count"><b>Total-Leaves-Taken-sheet</b></a></li>
                     <li class="breadcrumb-item active"><b>Admin-Control-Panel</b></li>              
                     </ol>
                 </div>

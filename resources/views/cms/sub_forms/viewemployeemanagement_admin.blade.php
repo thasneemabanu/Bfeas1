@@ -20,7 +20,7 @@
 
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                   <li class="breadcrumb-item"><a href="/admin"> <b>Home</b></a></li>
+                   <li class="breadcrumb-item"><a href="/adminpanel"> <b>Home</b></a></li>
                         
                         <li class="breadcrumb-item active"><b>Admin-control-Panel</b></li> 
                     </ol>
@@ -72,8 +72,6 @@
 
                   </tr> 
                   </thead>
-                  
-<!---------------------------------------------------------->
                   <tbody>
                   <tr class="odd">
                     <td class="dtr-control sorting_1" tabindex="0"></td>
@@ -186,15 +184,13 @@
             </div> <!-- /.card-body -->
         </div> <!-- /.container-fluid -->
 
-        <a href="/addemployee" class="btn btn-info btn-lg">
+        <a href="/adminaddemployee" class="btn btn-info btn-lg">
           <span class="glyphicon glyphicon-user"></span> Add employee 
         </a>
-        <a href="/editemployee" class="btn btn-info btn-lg">
+        <a href="/admineditemployee" class="btn btn-info btn-lg">
           <span class="glyphicon glyphicon-user"></span> Edit employee 
         </a>
-  </section>   <!-- /.section -->
-
-
+  </section>   <!-- /.section -->              
 </div><!-- /.content -->
 @endsection
 

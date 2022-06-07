@@ -12,7 +12,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="/supervisor"><b>Home</b></a></li>
-                        <li class="breadcrumb-item"><a href="/supervisorformone"><b>LeavesApprovals</b></a></li>
+                        <li class="breadcrumb-item"><a href="/supervisorleavepermision"><b>LeavesApprovals</b></a></li>
                         
                         <li class="breadcrumb-item active"><b>Supervisor-control-Panel</b></li>
                     </ol>

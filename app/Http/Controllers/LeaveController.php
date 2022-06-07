@@ -10,6 +10,7 @@ use DatePeriod;
 use App\Models\Leaves;
 use Session;
 use Redirect;
+use App\Models\User;
 
 class LeaveController extends Controller
 {
@@ -50,10 +51,28 @@ class LeaveController extends Controller
 
     }       //end of function request_leave
 
-//total leaves taken page controller 
-    public function total_leave(){
+      //total-leaves-taken by admin 
+      public function total_leave(){
         $data = [];
-        return view('cms.sub_forms.total_leaves_taken')->with($data);
+        return view('cms.sub_forms.total_leaves_taken_admin')->with($data);
+    }
+
+
+      public function totalleavesemployee(){    //total-leaves-taken by employee-panel
+        $data = [];
+        return view('cms.sub_forms.total_leaves_taken_emppanel')->with($data);
+    }
+
+
+      public function leavescount(){    //leaves count 
+        // Getting logged in user / Leave Requesting Employee
+        $logged_in_user = Auth::user();
+        $leaves = Leaves::where('employee_id',$logged_in_user->id)->get();
+        $data['leaves'] = $leaves;
+        $employee = User::find($logged_in_user->id);
+        $data['employee'] = $employee;
+        return view('cms.sub_forms.leavescount')->with($data);
+        
     }
 
 
