@@ -7,12 +7,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Admin-Leaves Management </h1>
+                    <h1> </h1>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/adminpanel"><b>Home</b></a></li>
-                        <li class="breadcrumb-item active"><b>Admin-control-panel</b></li>   
+                        <li class="breadcrumb-item"><b>Leave Request</b></li>
+                        <li class="breadcrumb-item active"><b> Request panel</b></li>   
                     </ol>
                 </div>
             </div>
@@ -52,8 +52,8 @@
               <label for="to_date">Leave To</label>
           </div>
                    <button type="submit" class="btn btn-primary">Request to Supervisor</button>
-                   <button type="submit" class="btn btn-secondary">Cancel</button> <br><br><br>
-                   <button type="button" class="btn btn-info"><a href="/adminpanel">Go back</a></button>
+                   <button type="submit" class="btn btn-secondary">Cancel</button><br><br>
+                   <button type="submit" class="btn btn-secondary">Cancel request</button>
                     
                    <div class="mb-3 mt-3">
                    <label for="comment">Supervisor Approval</label>

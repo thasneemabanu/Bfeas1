@@ -13,12 +13,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Add employee details </h1>
+                    <h1></h1>
                 </div>
 
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                   <li class="breadcrumb-item"><a href="/adminmanageemployee"> <b>Employee-management</b></a></li>                
+                   <li class="breadcrumb-item"><b>Add-Employee</b></li>                
                   <li class="breadcrumb-item active">Admin-control-Panel</li> 
                     </ol>
 <!--
@@ -90,7 +90,7 @@
     </div>
     <div class="mb-3 mt-3">
       <label for="departmentid" class="fxorm-label">Department ID</label>
-      <input type="text" class="form-control" style="margin-top:5px!important" id="email" placeholder="Enter department ID" name="email">
+      <input type="text" class="form-control" style="margin-top:5px!important" id="departmentid" placeholder="Enter department ID" name="email">
       <!--<div class="form-text">Must be a valid email address.</div>-->
     </div>   
     <div class="mb-3 mt-3">
@@ -100,11 +100,11 @@
     </div> 
     <div class="mb-3 mt-3">
       <label for="startdate" class="fxorm-label">Employed Date</label>
-      <input type="date" class="form-control" style="margin-top:5px!important" id="employedfromdate" placeholder="Enter email" name="employedfrom">
+      <input type="date" class="form-control" style="margin-top:5px!important" id="employedfromdate" placeholder="Enter employed date" name="employedfrom">
       <!--<div class="form-text">Must be a valid email address.</div>-->
     </div> 
     <button type="button" class="btn btn-primary mb-3">Add</button>     
-    <button type="button" class="btn btn-outline-primary mb-3"><a href="/admineditemployee"> Edit</a></button>
+    <button type="button" class="btn btn-outline-primary mb-3"><a href="/admineditemployee">Edit</a></button>
 </div>
         </div><!-- /.container-fluid -->
     </section>

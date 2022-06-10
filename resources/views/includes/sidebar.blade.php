@@ -48,15 +48,15 @@
                with font-awesome or any other icon font library -->
 
         <li class="nav-item">
-          <a href="home" class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
+          <a href="profile" class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}">
+            <i class=""></i>
             <p>
-              Dashboard
+              Profile
             </p>
           </a>
         </li>
 
-        <!--
+     <!--   
           <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
@@ -219,76 +219,92 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
+              <i class="nav-icon fa fa-lock"></i>
               <p>
-                Forms
+                Admin-Dashboard
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
+            
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/forms/general.html" class="nav-link">
+                <a href="/adminpanel" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>General Elements</p>
+                  <p>Admin-Panel</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/advanced.html" class="nav-link">
+                <a href="/users" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Advanced Elements</p>
+                  <p>Users </p>
+                </a>
+              </li>
+             <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>
+                Employee management
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+                <ul class="nav nav-treeview">
+
+                <li class="nav-item">
+                  <a href="/viewemployees" class="nav-link">
+                  <i class="far fa fa-user-plus"></i>
+                  <p>&nbspView Employees</p>
+                </a>
+              </li>
+                  <li class="nav-item">
+                  <a href="/adminaddemployee" class="nav-link">
+                  <i class="far fa fa-user-plus"></i>
+                  <p>&nbspAdd Employee</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/editors.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Editors</p>
+                  <a href="/admineditemployee" class="nav-link">
+                  <i class="far fa fa-user-plus"></i>
+                  <p>&nbspEdit Employee</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Validation</p>
-                </a>
+                </ul>
               </li>
             </ul>
-          </li>
+          </li> 
+          
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
-                Tables
+                Manage Leaves 
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
+                <a href="adminleave" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Tables</p>
+                  <p>Request leave</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
+                <a href="count" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>DataTables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/jsgrid.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>jsGrid</p>
+                  <p>View total-Leaves Report</p>
                 </a>
               </li>
             </ul>
           </li>
-          -->
+
+
+        
         <!--
           <li class="nav-header">EXAMPLES</li>
           -->
-
+<!--
         @can('mail.mail')
         <li class="nav-item ">
           <a href="/mail" class="nav-link {{ request()->is('mail') ? 'active' : '' }}">
@@ -299,16 +315,16 @@
           </a>
         </li>
         @endcan
-
-        <li class="nav-item">
+-->
+   <!--    <li class="nav-item">
           <a href="/users" class="nav-link {{ request()->is('employee') ? 'active' : '' }}">
-            <!--<i class="nav-icon fa fa-user-tie"></i> -->
-            <i class="fa fa-users" ></i>
+            <i class="nav-icon fa fa-user-tie"></i>
+           <i class="fa fa-users" ></i>
             <p>
               Users
             </p>
           </a>
-        </li>
+        </li> -->
 
         @can('task.task')
         <li class="nav-item">
@@ -326,8 +342,8 @@
           <a href="/ap" class="nav-link {{ request()->is('ap') ? 'active' : '' }}">
             <i class="nav-icon far fa-calendar-alt"></i>
             <p>
-              Advance Program
-              <!--<span class="badge badge-info right bg-warning">2</span>-->
+              Advance Program 
+              <span class="badge badge-info right bg-warning">2</span>
             </p>
           </a>
         </li>
@@ -357,60 +373,109 @@
           </a>
         </li>
 -->
-      
-        <li class="nav-item">
-          <a href="/adminpanel" class="nav-link" >
-          <i class="fa fa-lock" >&nbsp</i>
-            <p>
-            Admin
-            </p>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="/employee" class="nav-link" >
-          <i class="fa fa-male" >&nbsp&nbsp</i>
-            <p>
-             Employee
-            </p>
-          </a>
-        </li>
-
-
-        <li class="nav-item">
-          <a href="/supervisor" class="nav-link" >
-          <i class="fa fa-tasks" >&nbsp</i>
-            <p>
-              Supervisor
-            </p>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="/director" class="nav-link" >
-          
-          <i class="fa fa-address-card" >&nbsp</i>
-            <p>
-              Director
-            </p>
-          </a>
-        </li>
-
-        <!--<li class="nav-item">
-          <a href="/" class="nav-link" >
-          <i class="fa fa-address-card" >&nbsp</i>
-            <p>
-              Employee Attendance
-            </p>
-          </a>
-        </li>
--->
-      
+       <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class=" fa fa-user"></i>
+              <p> Employee-dashboard 
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">                        
+              <li class="nav-item">
+                <a href="/employee" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p> &nbspEmployee Panel</p>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="adminleave" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>&nbspRequest leave</p>
+                </a>
+              </li>           
+            </ul>
+          </li>
+       <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa fa-users"></i>
+              <p>
+                Supervisor-dashboard 
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">                        
+              <li class="nav-item">
+                <a href="/supervisor" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>supervisor Panel</p>
+                </a>
+              </li>
+                <li class="nav-item">
+                <a href="/supervisorleavepermision" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Leave permissions</p>
+                </a>
+              </li>         
+            </ul>
+          </li>
+       <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa fa-users"></i>
+              <p>
+                Director-dashboard 
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">                        
+              <li class="nav-item">
+                <a href="/director" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Director Panel</p>
+                </a>
+              </li>
+                <li class="nav-item">
+                <a href="/directorleavepermision" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Leave permissions</p>
+                </a>
+              </li>             
+            </ul>
+          </li>       
+          <li class="nav-item">
+                <a href="/attendancereport" class="nav-link">
+                  <i class="fa fa-address-card"></i>
+                  <p> &nbsp Attendance report</p>
+                </a>
+              </li>
+       <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa fa-calendar"></i>
+              <p>
+                Holiday Management
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">                        
+              <li class="nav-item">
+                <a href="/holiday" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p> &nbspView Holidays</p>
+                </a>
+              </li>
+                <li class="nav-item">
+                <a href="/holidayaddedit" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p> &nbspAdd Holidays</p>
+                </a><br>
+              </li>          
+            </ul>
+          </li>
 
         <li class="nav-item">
           <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
            <!-- <i class="nav-icon fa fa-power-off"></i>-->
-            <i class="fa fa-power-off">&nbsp</i>
+            <i class="fa fa-power-off"></i>
             <p>
               Logout
             </p>

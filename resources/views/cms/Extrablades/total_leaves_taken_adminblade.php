@@ -29,7 +29,7 @@
 <table class="table table-bordered table-striped">
     <tbody id="myTable">
       <tr>
-        <td><label for="staticEmail" class="col-sm-2 col-form-label">Employee ID</label></td> 
+        <td></td>
       </tr>
      </tbody>
 </table>

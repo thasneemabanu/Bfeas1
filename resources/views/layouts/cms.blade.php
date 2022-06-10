@@ -13,7 +13,7 @@
   </div>
 
   <!-- Navbar -->
-  @include('navbar.nav')
+ @include('navbar.nav')
   <!-- Main Sidebar Container -->
   
 

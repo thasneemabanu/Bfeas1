@@ -35,7 +35,7 @@ class AdminController extends Controller
     //function for display details(admin panel) 
     public function empmanagementadmin(){
     $data = [];
-    return view('cms.sub_forms.viewemployeemanagement_admin')->with($data);  
+    return view('cms.sub_forms.viewemployee_admin')->with($data);  
 }
   
     //function for add-employee (admin panel) 

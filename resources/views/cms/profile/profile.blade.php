@@ -11,7 +11,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/home"><b>Home</b></a></li>
+                        <li class="breadcrumb-item"><b>Home</b></li>
                         
 
 
@@ -135,6 +135,8 @@
         </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
+
+    
     @include('cms.profile.password_update_modal')
 </div>
 <script>
@@ -154,4 +156,8 @@
         $("#user-sign-submit").trigger("click");
     }
 </script>
+
+
+
+
 @endsection

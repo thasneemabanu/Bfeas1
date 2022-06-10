@@ -8,12 +8,11 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Leave Management/supervisor</h1>
+                    <h1></h1>
                 </div>
                 <div class="col-sm-6">
                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="/supervisor"><b>Home</b></a></li>
-                        
+                        <li class="breadcrumb-item"><b>Leave Permissions</b></li>                     
                         <li class="breadcrumb-item active"><b>Supervisor-control-Panel</b></li> 
                         <!-- options for approval and cancelling of leaves -->
                         

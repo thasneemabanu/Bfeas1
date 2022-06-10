@@ -8,6 +8,7 @@ use DateTime;
 use DateInterval;
 use DatePeriod;
 use App\Models\Leaves;
+
 use Session;
 use Redirect;
 use App\Models\User;
@@ -49,19 +50,8 @@ class LeaveController extends Controller
          Session::flash('success','Leave requested to supervisor');
          return Redirect::back();
 
-    }       //end of function request_leave
-
-      //total-leaves-taken by admin 
-      public function total_leave(){
-        $data = [];
-        return view('cms.sub_forms.total_leaves_taken_admin')->with($data);
-    }
-
-
-      public function totalleavesemployee(){    //total-leaves-taken by employee-panel
-        $data = [];
-        return view('cms.sub_forms.total_leaves_taken_emppanel')->with($data);
-    }
+    }//end of function request_leave 
+    
 
 
       public function leavescount(){    //leaves count 
@@ -76,4 +66,17 @@ class LeaveController extends Controller
     }
 
 
+
 }
+
+
+// public function totalleavesemployee(){    //total-leaves-taken by employee-panel
+     //   $data = [];
+     //   return view('cms.sub_forms.total_leaves_taken_emppanel')->with($data);
+  //  }
+
+     //total-leaves-taken by admin 
+      //public function total_leave(){
+       // $data = [];
+       // return view('cms.sub_forms.total_leaves_taken_admin')->with($data);
+   // }
