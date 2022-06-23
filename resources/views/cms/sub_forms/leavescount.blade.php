@@ -28,7 +28,7 @@
             
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Total leaves taken {{$employee->id}}-{{$employee->name}}</h3>
+                        <h3 class="card-title">  Employee ID : {{$employee->id}} , Name : {{$employee->name}} ,Has taken total leaves</h3>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body p-0">

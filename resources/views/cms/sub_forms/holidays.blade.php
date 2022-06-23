@@ -82,86 +82,73 @@
                     <tr>
                       <td></td>
                       <td></td>
+                      @role('admin|supervisor|director')
                       <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+                      @endrole
                     </tr>
                      <tr>
                       <td></td>
                       <td></td>
+                      @role('admin|supervisor|director')
                       <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+                      @endrole
                     </tr> <tr>
                       <td></td>
                       <td></td>
+                      @role('admin|supervisor|director')
                       <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+                      @endrole
                     </tr> <tr>
                       <td></td>
                       <td></td>
+                      @role('admin|supervisor|director')
                       <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+                      @endrole
                     </tr> <tr>
                       <td></td>
                       <td></td>
+                      @role('admin|supervisor|director')
                       <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+                      @endrole
                     </tr> <tr>
                       <td></td>
                       <td></td>
+                      @role('admin|supervisor|director')
                       <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+                      @endrole
                     </tr> <tr>
                       <td></td>
                       <td></td>
+                       @role('admin|supervisor|director')
                       <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+                       @endrole
                     </tr> <tr>
                       <td></td>
                       <td></td>
+                      @role('admin|supervisor|director')
                       <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+                      @endrole
                     </tr> <tr>
                       <td></td>
                       <td></td>
+                      @role('admin|supervisor|director')
                       <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+                      @endrole
                     </tr> <tr>
                       <td></td>
                       <td></td>
+                      @role('admin|supervisor|director')
                       <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
-                    </tr> <tr>
+                      @endrole
+                    </tr> 
+                    <tr>
                       <td></td>
                       <td></td>
+                      @role('admin|supervisor|director')
                       <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
-                    </tr> <tr>
-                      <td></td>
-                      <td></td>
-                      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
-                    </tr> <tr>
-                      <td></td>
-                      <td></td>
-                      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
-                    </tr> <tr>
-                      <td></td>
-                      <td></td>
-                      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
-                    </tr> <tr>
-                      <td></td>
-                      <td></td>
-                      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
-                    </tr> <tr>
-                      <td></td>
-                      <td></td>
-                      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
-                    </tr> <tr>
-                      <td></td>
-                      <td></td>
-                      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
-                    </tr> <tr>
-                      <td></td>
-                      <td></td>
-                      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
-                    </tr> <tr>
-                      <td></td>
-                      <td></td>
-                      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
-                    </tr> <tr>
-                      <td></td>
-                      <td></td>
-                      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
-                    </tr>
-                     
+                      @endrole
+                    </tr> 
+                       
                   </tbody>
                 </table>
                     
@@ -174,10 +161,11 @@
                       <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                     </tr>-->
                     <br>
-<a href="/holidayaddedit" class="btn btn-secondary btn-lg">
+                    @role('admin')
+ <a href="/holidayaddedit" class="btn btn-secondary btn-lg">
           <span class="glyphicon glyphicon-user"></span> Add Holiday 
          </a>
-         
+         @endrole
               </div>
          
 </div><!--full container close -->

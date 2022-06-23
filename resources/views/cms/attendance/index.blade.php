@@ -17,42 +17,6 @@
                 </div>
             </div>
 
-            <div class="form-group">
-                  <label>Select a Month</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="far fa-calendar-alt"></i>
-                      </span>
-                    </div>
-                    <input type="month" class="form-control float-right" id="reservation">
-                  </div><!-- /.input group -->
-                </div>
-
-<!--drop down buttons for month and year---->
-<!--
-<div class="dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle " data-bs-toggle="dropdown">
-    Month &nbsp;&nbsp;
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Link 1</a></li>
-    <li><a class="dropdown-item" href="#">Link 2</a></li>
-    <li><a class="dropdown-item" href="#">Link 3</a></li>
-  </ul>
-</div> <br>
-<div class="dropdown">
-  <button type="date" class="btn btn-secondary dropdown-toggle " data-bs-toggle="dropdown">
-    Year &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Link 1</a></li>
-    <li><a class="dropdown-item" href="#">Link 2</a></li>
-    <li><a class="dropdown-item" href="#">Link 3</a></li> 
-  </ul> 
-</div> -->
-
-        <!--drop down button ends---->
         </div><!-- /.container-fluid -->
     </section>
 
@@ -77,53 +41,12 @@
                      <!--<th style="width: 40px">Label</th>-->
                     </tr>
                   </thead>
-                  <tbody>
-                    
-                    <tr>
-                   <!--   <td>1.</td>
-                      <td>Update software</td>
-                      <td>
-                        <div class="progress progress-xs">
-                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                        </div>
-                      </td>
-                      <td><span class="badge bg-danger">55%</span></td>
-                    </tr>
-                    <tr>
-                      <td>2.</td>
-                      <td>Clean database</td>
-                      <td>
-                        <div class="progress progress-xs">
-                          <div class="progress-bar bg-warning" style="width: 70%"></div>
-                        </div>
-                      </td>
-                      <td><span class="badge bg-warning">70%</span></td>
-                    </tr>
-                    <tr>
-                      <td>3.</td>
-                      <td>Cron job running</td>
-                      <td>
-                        <div class="progress progress-xs progress-striped active">
-                          <div class="progress-bar bg-primary" style="width: 30%"></div>
-                        </div>
-                      </td>
-                      <td><span class="badge bg-primary">30%</span></td>
-                    </tr>
-                    <tr>
-                      <td>4.</td>
-                      <td>Fix and squish bugs</td>
-                      <td>
-                        <div class="progress progress-xs progress-striped active">
-                          <div class="progress-bar bg-success" style="width: 90%"></div>
-                        </div>
-                      </td>
-                      <td><span class="badge bg-success">90%</span></td>
-                    </tr>-->
+                  <tbody>                   
+                    <tr></tr>
                   </tbody>
                 </table>
 <br>
 <br>
-
 <div class="col-sm-12 col-md-7">
                         <div class="dataTables_paginate paging_simple_numbers" id="example1_paginate">
                             <ul class="pagination">
@@ -151,12 +74,17 @@
                             </ul>  
                           </div>
                         <button class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="example1" type="button">
-                        <span> Print </span></button> <br><br>
+                        <span> Print </span></button> 
+                        @role('admin')
+                        <a href="/update_attendance" class="btn btn-secondary buttons-copy buttons-html5">
+                        <span> Update an attendance  </span></a></button>
+                        <a href="/add_attendance" class="btn btn-secondary buttons-copy buttons-html5">
+                        <span> create an attendance  </span></a></button>
+                        @endrole
                         </div>
                       </div>
                     </div>
-                  </div>
-                        
+</div>                       
               </div> <!-- /end of card-body -->
              
 

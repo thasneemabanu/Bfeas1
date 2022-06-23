@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AttendanceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,7 +54,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/adminleave', 'AdminController@leavemanagementadmin')->name('Admin Panel leave management');             //..done
 
     // Admin Panel attendance report management
-    Route::get('/attendancereport', 'AttendanceController@reportmanagementadmin')->name('Admin Panel attendance management');  
+    #Route::get('/attendancereport', 'AttendanceController@reportmanagementadmin')->name('Admin Panel attendance management');  
          
     // Admin Panel add employee
     Route::get('/adminaddemployee', 'AdminController@addemployeeadmin')->name('Admin Panel add employee');
@@ -85,17 +86,31 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/holiday', 'HolidaysController@holidayslist')->name('holidays list page');  
    //holiday crud  
     Route::get('/holidayaddedit', 'HolidaysController@holidayadd')->name('adding holidays page');  
-
-
-
+   //Checking roles 
+    Route::get('/createauths', 'Permision@createRoles')->name('');
+   //new attendance blade
+    Route::resource('attendance', AttendanceController::class);
+      //attendance add
+    Route::get('/add_attendance', 'AttendanceController@add_Attendance')->name('');  
+      //attendance update
+    Route::get('/update_attendance', 'AttendanceController@update_Attendance')->name(''); 
 });
+
+
+
+
+
+
 
  // employee Panel form 1
  //Route::get('/employeeleaverequest', 'EmployeeController@leavemanagementemployee')->name('Employee Panel leave management'); //..done
 
-  
     //Employee panal form 2
    // Route::get('/employeeviewreport', 'EmployeeController@reportsemployee')->name('Employee Panel report management');        //..done 
 //
     //Route::get('/attendance/view/{employee_id}', ' AttendanceController@attendancemenu')->name('Attendance');
+    
+/*Route::middleware('auth:api')->group( function () {
+    Route::resource('attendance', AttendanceController::class);
+});*/
 

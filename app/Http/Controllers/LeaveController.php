@@ -47,8 +47,9 @@ class LeaveController extends Controller
             $leave->leave_reason=$request->reason;
             $leave->save();
         }
-         Session::flash('success','Leave requested to supervisor');
-         return Redirect::back();
+        
+          Session::flash('success', 'requested Leaves');
+         //return Redirect::back();
 
     }//end of function request_leave 
     

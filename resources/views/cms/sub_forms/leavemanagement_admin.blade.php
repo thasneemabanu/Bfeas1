@@ -30,13 +30,13 @@
                  <option selected>Open this select menu to choose leave type </option>
                   <option value="maternity">Annual </option>
                   <option value="maternity">Casual</option>
-                  <option value="maternity">Compensatory Off</option>
-                  <option value="maternity">Marriage</option>
-                  <option value="maternity">Bereavement Leave.</option>
+                  <option value="compensatory">Compensatory Off</option>
+                  <option value="marriage">Marriage</option>
+                  <option value="mereavement">Bereavement Leave.</option>
                   <option value="medical">Medical</option>
                   <option value="vacation">Vacation</option>
                   <option value="maternity">Maternity</option>
-                  <option value="maternity">Paternity Leave</option>
+                  <option value="paternity">Paternity Leave</option>
                 </select>
           </div>
           <div class="mb-3 mt-3">

@@ -220,6 +220,7 @@
               </li>
             </ul>
           </li> -->
+          @role('admin')
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa-lock"></i>
@@ -274,7 +275,90 @@
               </li>
             </ul>
           </li> 
-          
+          @endrole
+
+
+          @role('employee')
+       <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class=" fa fa-user"></i>
+              <p> Employee-dashboard 
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">                        
+              <li class="nav-item">
+                <a href="/employee" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p> &nbspEmployee Panel</p>
+                </a>
+              </li>
+              
+             <!-- <li class="nav-item">
+                <a href="adminleave" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>&nbspRequest leave</p>
+                </a>
+              </li>  -->         
+            </ul>
+          </li>
+          @endrole
+
+ @role('supervisor')   
+       <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa fa-users"></i>
+              <p>
+                Supervisor-dashboard 
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">                        
+              <li class="nav-item">
+                <a href="/supervisor" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>supervisor Panel</p>
+                </a>
+              </li>
+                <li class="nav-item">
+                <a href="/supervisorleavepermision" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Leave permissions</p>
+                </a>
+              </li>         
+            </ul>
+          </li>
+           @endrole
+
+
+ 
+            @role('director') 
+       <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fa fa-users"></i>
+              <p>
+                Director-dashboard 
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">                        
+              <li class="nav-item">
+                <a href="/director" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Director Panel</p>
+                </a>
+              </li>
+                <li class="nav-item">
+                <a href="/directorleavepermision" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Leave permissions</p>
+                </a>
+              </li>             
+            </ul>
+          </li>    
+          @endrole  
+
+
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
@@ -285,11 +369,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
+                @role('employee|admin')
                 <a href="adminleave" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Request leave</p>
                 </a>
-              </li>
+               
+              </li> @endrole
               <li class="nav-item">
                 <a href="count" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -298,7 +384,6 @@
               </li>
             </ul>
           </li>
-
 
         
         <!--
@@ -372,87 +457,14 @@
             </p>
           </a>
         </li>
--->
-       <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class=" fa fa-user"></i>
-              <p> Employee-dashboard 
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">                        
-              <li class="nav-item">
-                <a href="/employee" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p> &nbspEmployee Panel</p>
-                </a>
-              </li>
-              
-              <li class="nav-item">
-                <a href="adminleave" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>&nbspRequest leave</p>
-                </a>
-              </li>           
-            </ul>
-          </li>
-       <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fa fa-users"></i>
-              <p>
-                Supervisor-dashboard 
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">                        
-              <li class="nav-item">
-                <a href="/supervisor" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>supervisor Panel</p>
-                </a>
-              </li>
-                <li class="nav-item">
-                <a href="/supervisorleavepermision" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Leave permissions</p>
-                </a>
-              </li>         
-            </ul>
-          </li>
-       <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fa fa-users"></i>
-              <p>
-                Director-dashboard 
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">                        
-              <li class="nav-item">
-                <a href="/director" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Director Panel</p>
-                </a>
-              </li>
-                <li class="nav-item">
-                <a href="/directorleavepermision" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Leave permissions</p>
-                </a>
-              </li>             
-            </ul>
-          </li>       
-          <li class="nav-item">
-                <a href="/attendancereport" class="nav-link">
-                  <i class="fa fa-address-card"></i>
-                  <p> &nbsp Attendance report</p>
-                </a>
-              </li>
+-->    
+         
+     
        <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="fa fa-calendar"></i>
               <p>
-                Holiday Management
+                   Holiday Management
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -463,15 +475,74 @@
                   <p> &nbspView Holidays</p>
                 </a>
               </li>
+
+              @role('admin')
                 <li class="nav-item">
                 <a href="/holidayaddedit" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p> &nbspAdd Holidays</p>
                 </a><br>
-              </li>          
+              </li> 
+              @endrole         
             </ul>
           </li>
 
+           <!-- <li class="nav-item">
+              <a href="/attendancereport" class="nav-link">
+                <i class="fa fa-address-card"></i>
+                <p> &nbsp Attendance report</p>
+              </a>
+            </li>-->
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa fa-address-card"></i>
+                <p> &nbsp Attendance</p>
+              </a>
+              <ul class="nav nav-treeview"> 
+                <!--@role('admin')
+                <li class="nav-item">
+                  <a href="{{ route('attendance.index') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p> Add an attendance record</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('attendance.index') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p> Edit an attendance record</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="{{ route('attendance.index') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p> delete attendance record</p>
+                  </a>
+                </li>
+                @endrole -->
+                <li class="nav-item">
+                  <a href="{{ route('attendance.index') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p> &nbsp Daily</p>
+                  </a>
+                </li>
+                 <li class="nav-item">
+                  <a href="{{ route('attendance.index') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p> &nbsp Weekly</p>
+                  </a>
+                </li>
+                 <li class="nav-item">
+                  <a href="{{ route('attendance.index') }}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p> &nbsp Monthly</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+              
+
+              
         <li class="nav-item">
           <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
            <!-- <i class="nav-icon fa fa-power-off"></i>-->
