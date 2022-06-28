@@ -29,9 +29,9 @@
                   <thead>
                     <div class="col-sm-12 col-md-6">
                          <div id="example1_filter" class="dataTables_filter">
-                          @role('admin')
+                        @role('admin')
                          <label>Search an employee<input type="search" class="form-control form-control-sm" placeholder="Enter employee ID" aria-controls="example1"></label>
-                         @endrole
+                        @endrole
                    </div> <br>
                     <tr>
                       <th style="width: 10px">#</th>
@@ -74,13 +74,7 @@
                             </ul>  
                           </div>
                         <button class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="example1" type="button">
-                        <span> Print </span></button> 
-                        @role('admin')
-                        <a href="/update_attendance" class="btn btn-secondary buttons-copy buttons-html5">
-                        <span> Update an attendance  </span></a></button>
-                        <a href="/add_attendance" class="btn btn-secondary buttons-copy buttons-html5">
-                        <span> create an attendance  </span></a></button>
-                        @endrole
+                        <span> Print </span></button> <br><br><br>
                         </div>
                       </div>
                     </div>
@@ -229,13 +223,3 @@
                 </table>
               </div>
 
--->             
-<!--codes tried with other UI components -->
-<!--codes tried with other UI components --><!--
-                      <th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" >Employee_ID</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">DepartmentID</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Department Name</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Date</th>
-                      <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Status</th>
-
--->

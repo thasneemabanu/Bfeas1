@@ -220,7 +220,7 @@
               </li>
             </ul>
           </li> -->
-          @role('admin')
+     @role('admin')
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa-lock"></i>
@@ -254,19 +254,20 @@
                 <ul class="nav nav-treeview">
 
                 <li class="nav-item">
-                  <a href="/viewemployees" class="nav-link">
+                  <!--<a href="/viewemployees" class="nav-link">-->
+                    <a href="/viewemployees" class="nav-link">
                   <i class="far fa fa-user-plus"></i>
                   <p>&nbspView Employees</p>
                 </a>
               </li>
                   <li class="nav-item">
-                  <a href="/adminaddemployee" class="nav-link">
+                  <!--<a href="/adminaddemployee" class="nav-link">-->
                   <i class="far fa fa-user-plus"></i>
                   <p>&nbspAdd Employee</p>
                 </a>
               </li>
               <li class="nav-item">
-                  <a href="/admineditemployee" class="nav-link">
+                  <!--<a href="/admineditemployee" class="nav-link">-->
                   <i class="far fa fa-user-plus"></i>
                   <p>&nbspEdit Employee</p>
                 </a>
@@ -275,10 +276,8 @@
               </li>
             </ul>
           </li> 
-          @endrole
-
-
-          @role('employee')
+     @endrole
+     @role('employee')
        <li class="nav-item">
             <a href="#" class="nav-link">
               <i class=" fa fa-user"></i>
@@ -302,9 +301,8 @@
               </li>  -->         
             </ul>
           </li>
-          @endrole
-
- @role('supervisor')   
+    @endrole
+    @role('supervisor')   
        <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="fa fa-users"></i>
@@ -328,11 +326,8 @@
               </li>         
             </ul>
           </li>
-           @endrole
-
-
- 
-            @role('director') 
+      @endrole
+      @role('director') 
        <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="fa fa-users"></i>
@@ -356,9 +351,7 @@
               </li>             
             </ul>
           </li>    
-          @endrole  
-
-
+      @endrole  
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
@@ -369,13 +362,20 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                @role('employee|admin')
+      @role('employee|admin')
                 <a href="adminleave" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Request leave</p>
-                </a>
-               
-              </li> @endrole
+                </a>               
+              </li>
+      @endrole
+       @role('supervisor|director')
+                <a href="supervisorleavepermision" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Request leave</p>
+                </a>               
+              </li>
+      @endrole
               <li class="nav-item">
                 <a href="count" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -475,15 +475,14 @@
                   <p> &nbspView Holidays</p>
                 </a>
               </li>
-
-              @role('admin')
+        @role('admin')
                 <li class="nav-item">
                 <a href="/holidayaddedit" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p> &nbspAdd Holidays</p>
                 </a><br>
               </li> 
-              @endrole         
+        @endrole         
             </ul>
           </li>
 
@@ -493,33 +492,13 @@
                 <p> &nbsp Attendance report</p>
               </a>
             </li>-->
-
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="/attendance" class="nav-link">
                 <i class="fa fa-address-card"></i>
-                <p> &nbsp Attendance</p>
+                <p> &nbspView Attendance</p>
+                <i class="fas fa-angle-left right"></i>
               </a>
               <ul class="nav nav-treeview"> 
-                <!--@role('admin')
-                <li class="nav-item">
-                  <a href="{{ route('attendance.index') }}" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p> Add an attendance record</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="{{ route('attendance.index') }}" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p> Edit an attendance record</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="{{ route('attendance.index') }}" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p> delete attendance record</p>
-                  </a>
-                </li>
-                @endrole -->
                 <li class="nav-item">
                   <a href="{{ route('attendance.index') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
@@ -539,10 +518,28 @@
                   </a>
                 </li>
               </ul>
+      @role('admin')
+              <a href="/attendance" class="nav-link">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <p> Attendance Management </p>
+                <i class="fas fa-angle-left right"></i>
+              </a>
+              <ul class="nav nav-treeview"> 
+                <li class="nav-item">
+                  <a href="/add_attendance" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p> Add</p>
+                  </a>
+                </li>
+                 <li class="nav-item">
+                  <a href="/update_attendance" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p> Edit/Delete</p>
+                  </a>
+                </li>
+              </ul>
             </li>
-              
-
-              
+       @endrole   
         <li class="nav-item">
           <a href="#" class="nav-link" onclick="$('#form-logout').submit()">
            <!-- <i class="nav-icon fa fa-power-off"></i>-->
@@ -552,14 +549,9 @@
             </p>
           </a>
         </li>
-
-
-
         <form id="form-logout" action="{{ route('logout') }}" method="POST" class="nav-item">
           {{ csrf_field() }}
         </form>
-
-
 
         <!--
           <li class="nav-item">

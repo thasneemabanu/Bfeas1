@@ -25,8 +25,7 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-
-        <form action="/action_page.php">
+ <form action="/leave/request/request" method="POST">
                  <div class="mb-3 mt-3">
                    <label for="comment">Leave request from Employee/Admin </label>
                    <textarea disabled class="form-control" rows="5" id="comment" name="text"></textarea>

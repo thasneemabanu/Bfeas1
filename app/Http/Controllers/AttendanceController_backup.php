@@ -14,11 +14,13 @@ use Redirect;
 class AttendanceController extends Controller
 {
     // function for attendance-report (admin panel) 
-    public function reportmanagementadmin(){
+   /* public function reportmanagementadmin(){
         $data = [];
         return view('cms.sub_forms.attendance_reports')->with($data);
-    }
+    }*/
     
+
+
  //public function attendancemenu(){                                           //leaves count 
                                                                                // Getting logged in user / Leave Requesting Employee
       //  $logged_in_user = Auth::user();

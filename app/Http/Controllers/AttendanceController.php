@@ -2,11 +2,16 @@
 
 namespace App\Http\Controllers;
 use App\Models\Attendance;
-
 use Illuminate\Http\Request;
+use App\Models\User;
+use DateTime;
+use DatePeriod;
+use Session;
+use Redirect;
 
 class AttendanceController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      *
@@ -47,6 +52,8 @@ class AttendanceController extends Controller
             
         ]);
     
+
+        
         Attendace::create($request->all());
      
         return redirect()->route('csm.attendance.index')

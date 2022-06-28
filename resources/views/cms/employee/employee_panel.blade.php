@@ -106,7 +106,6 @@
                   <span class="mr-2">
                     <i class="fas fa-square text-primary"></i> Attendance 
                   </span>
-
                   <span>
                     <i class="fas fa-square text-gray"></i>Leaves
                   </span>

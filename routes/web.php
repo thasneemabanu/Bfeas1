@@ -44,56 +44,60 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/user/rempermission', 'UserController@remPermission');
     Route::post('/user/activateuser', 'UserController@activateUser');
 
-    // Admin Panel
-    Route::get('/adminpanel', 'AdminController@index')->name('Admin Panel');                                //..done
 
-    // Admin Panel view-employees 
-    Route::get('/viewemployees', 'AdminController@empmanagementadmin')->name('Admin Panel emp management view employees');               //..done
-
-    // Admin Panel Leave-request
-    Route::get('/adminleave', 'AdminController@leavemanagementadmin')->name('Admin Panel leave management');             //..done
-
-    // Admin Panel attendance report management
-    #Route::get('/attendancereport', 'AttendanceController@reportmanagementadmin')->name('Admin Panel attendance management');  
-         
+    
+   
+    
     // Admin Panel add employee
     Route::get('/adminaddemployee', 'AdminController@addemployeeadmin')->name('Admin Panel add employee');
-
     // Admin Panel edit employee
     Route::get('/admineditemployee', 'AdminController@editemployeeadmin')->name('Admin Panel edit employee');
-
-    // Director Panel home
-    Route::get('/director', 'DirectorController@directorhome')->name('Director Panel');                                  //..done
+     // Admin Panel view-employees 
+    Route::get('/viewemployees', 'AdminController@empmanagementadmin')->name('Admin Panel emp management view employees');               //..done
+    
+    //Dashboards 
+    // Admin Dashboard
+     Route::get('/adminpanel', 'AdminController@admindashboard')->name('Admin Dashboard');    
+     // Employee Dashboard
+    Route::get('/employee', 'EmployeeController@emppanel')->name('Employee Dashboard');     
+    // Director Dashboard
+    Route::get('/director', 'DirectorController@directorhome')->name('Director Panel');  
+    // supervisor Dashboard
+    Route::get('/supervisor', 'SupervisorController@super')->name('supervisor Panel');                          
+    
+    // Leave-request for all users 
+    Route::get('/adminleave', 'AdminController@leavemanagementadmin')->name('Admin Panel leave management');   
   
+                                  
     // Director Panel leave permisions
-    Route::get('/directorleavepermision', 'DirectorController@directorpermision')->name('Director Panel leave management');          //..done
+    Route::get('/directorleavepermision', 'DirectorController@directorpermision')->name('Director Panel leave management');         
 
-    // Employee Panal home
-    Route::get('/employee', 'EmployeeController@emppanel')->name('Employee Panel');                                        //..done
+                                           
 
-    // supervisor Panel
-    Route::get('/supervisor', 'SupervisorController@super')->name('supervisor Panel');                                   //...done   
-  
-    //supervisor form1
-    Route::get('/supervisorleavepermision', 'SupervisorController@superleave')->name('supervisor Panel leave management');     //...done
-
+                                      
+    // supervisor Panel leave permisions
+    Route::get('/supervisorleavepermision', 'SupervisorController@superleave')->name('supervisor Panel leave management');    
     //leave request by all the employees
-    Route::post('/leave/request/request', 'LeaveController@request_leave')->name('Leaves management page for requesting leave');                //done                
+    Route::post('/leave/request/request', 'LeaveController@request_leave')->name('Leaves management page for requesting leave');                               
     //new leaves count page
     Route::get('/count', 'LeaveController@leavescount')->name('Leaves Count page');  
-            
-    //holiday list
+     
+    
+     //holiday list
     Route::get('/holiday', 'HolidaysController@holidayslist')->name('holidays list page');  
-   //holiday crud  
+     //holiday crud  
     Route::get('/holidayaddedit', 'HolidaysController@holidayadd')->name('adding holidays page');  
-   //Checking roles 
+     //Checking roles 
     Route::get('/createauths', 'Permision@createRoles')->name('');
-   //new attendance blade
-    Route::resource('attendance', AttendanceController::class);
-      //attendance add
-    Route::get('/add_attendance', 'AttendanceController@add_Attendance')->name('');  
-      //attendance update
-    Route::get('/update_attendance', 'AttendanceController@update_Attendance')->name(''); 
+      
+    Route::get('/adminpanel', 'AdminController@admindashboard')->name('Admin Dashboard');
+                              
+
+    //Used blades for crud 
+    Route::resource('/attendance', AttendanceController::class);
+
+    Route::resource('/employees', EmployeeController::class);
+    
 });
 
 
@@ -105,11 +109,19 @@ Route::group(['middleware' => ['auth']], function () {
  // employee Panel form 1
  //Route::get('/employeeleaverequest', 'EmployeeController@leavemanagementemployee')->name('Employee Panel leave management'); //..done
 
-    //Employee panal form 2
-   // Route::get('/employeeviewreport', 'EmployeeController@reportsemployee')->name('Employee Panel report management');        //..done 
-//
+     //Employee panal form 2
+    // Route::get('/employeeviewreport', 'EmployeeController@reportsemployee')->name('Employee Panel report management');        //..done 
+    //
     //Route::get('/attendance/view/{employee_id}', ' AttendanceController@attendancemenu')->name('Attendance');
+
     
+    // Admin Panel attendance report management
+    //#Route::get('/attendancereport', 'AttendanceController@reportmanagementadmin')->name('Admin Panel attendance management'); 
+    
+   // Admin Panel attendance report management
+    //#Route::get('/attendancereport', 'AttendanceController@reportmanagementadmin')->name('Admin Panel attendance management');  
+         
+
 /*Route::middleware('auth:api')->group( function () {
     Route::resource('attendance', AttendanceController::class);
 });*/

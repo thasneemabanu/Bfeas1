@@ -66,8 +66,6 @@ class LeaveController extends Controller
         
     }
 
-
-
 }
 
 
