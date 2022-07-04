@@ -30,6 +30,8 @@ class AdminController extends Controller
         return view('cms.sub_forms.addemployee')->with($data);
     } 
 
+
+
     //function for creating routeleave-request (admin panel) 
     public function leavemanagementadmin(){
         $data = [];

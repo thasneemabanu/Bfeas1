@@ -86,7 +86,9 @@ Route::group(['middleware' => ['auth']], function () {
      //holiday list
     Route::get('/holiday', 'HolidaysController@holidayslist')->name('holidays list page');  
      //holiday crud  
-    Route::get('/holidayaddedit', 'HolidaysController@holidayadd')->name('adding holidays page');  
+    Route::get('/holidayaddedit', 'HolidaysController@holidayadd')->name('adding holidays page'); 
+
+     
      //Checking roles 
     Route::get('/createauths', 'Permision@createRoles')->name('');
       
@@ -96,7 +98,7 @@ Route::group(['middleware' => ['auth']], function () {
     //Used blades for crud 
     Route::resource('/attendance', AttendanceController::class);
 
-    Route::resource('/employees', EmployeeController::class);
+   //Route::resource('/employees', EmployeeController::class);
     
 });
 

@@ -260,18 +260,21 @@
                   <p>&nbspView Employees</p>
                 </a>
               </li>
-                  <li class="nav-item">
+              <li class="nav-item">
                   <!--<a href="/adminaddemployee" class="nav-link">-->
+                    <a href="/adminaddemployee" class="nav-link">
                   <i class="far fa fa-user-plus"></i>
-                  <p>&nbspAdd Employee</p>
+                  <p>&nbspAdd Employees</p>
                 </a>
               </li>
               <li class="nav-item">
                   <!--<a href="/admineditemployee" class="nav-link">-->
+                    <a href="/admineditemployee" class="nav-link">
                   <i class="far fa fa-user-plus"></i>
-                  <p>&nbspEdit Employee</p>
+                  <p>&nbspEdit Employees</p>
                 </a>
               </li>
+
                 </ul>
               </li>
             </ul>
